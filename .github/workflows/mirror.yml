@@ -8,7 +8,7 @@ name: Mirror dabanh playlist
 
 on:
   schedule:
-    - cron: "17 */2 * * *"
+    - cron: "*/30 * * * *"
   workflow_dispatch:
 
 permissions:
