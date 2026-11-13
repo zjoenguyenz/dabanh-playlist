@@ -218,6 +218,74 @@ def scrape_site(name, base):
     return entries, hot_entries
 
 
+_KICKOFF_RE = re.compile(r'(\d{1,2}):(\d{2})\s+(\d{1,2})/(\d{1,2})')
+HOT_MAX_AGE_MIN = 135
+
+
+def kickoff_of(title):
+    """First 'HH:MM DD/MM' in the title, Asia/Ho_Chi_Minh, current year —
+    the same rule the apps use (KickoffParser). None when absent."""
+    m = _KICKOFF_RE.search(title or "")
+    if not m:
+        return None
+    try:
+        from zoneinfo import ZoneInfo
+        vn = ZoneInfo("Asia/Ho_Chi_Minh")
+    except Exception:
+        return None
+    now = datetime.datetime.now(vn)
+    try:
+        ko = now.replace(hour=int(m.group(1)), minute=int(m.group(2)),
+                         day=int(m.group(3)), month=int(m.group(4)),
+                         second=0, microsecond=0)
+    except ValueError:
+        return None
+    if (now - ko).days > 30:  # New Year fixtures, same roll-forward as the apps
+        ko += datetime.timedelta(days=365)
+    return ko
+
+
+def is_stale_hot(title):
+    """True when a Hot entry's kickoff is over HOT_MAX_AGE_MIN old. The
+    source sites leave finished matches flagged hot for hours and the
+    apps can only infer 'live' from the kickoff, so stale entries are
+    dropped from the Hot group (they stay in their site/league groups,
+    where the apps reclassify them as replays)."""
+    ko = kickoff_of(title)
+    if ko is None:
+        return False
+    from zoneinfo import ZoneInfo
+    now = datetime.datetime.now(ZoneInfo("Asia/Ho_Chi_Minh"))
+    return (now - ko).total_seconds() > HOT_MAX_AGE_MIN * 60
+
+
+def prune_stale_hot(text):
+    """Remove stale Hot-group entries from playlist text. An entry block
+    is its #EXTINF line plus the following lines up to the next #EXTINF
+    (the stream URL and any #EXTVLCOPT lines)."""
+    lines = text.split("\n")
+    out, i, dropped = [], 0, 0
+    while i < len(lines):
+        line = lines[i]
+        if line.startswith("#EXTINF") and f'group-title="{HOT_GROUP}"' in line:
+            j = i + 1
+            while j < len(lines) and not lines[j].startswith("#EXTINF"):
+                j += 1
+            title = line.split(",", 1)[1] if "," in line else line
+            if is_stale_hot(title):
+                dropped += 1
+                i = j
+                continue
+            out.extend(lines[i:j])
+            i = j
+        else:
+            out.append(line)
+            i += 1
+    if dropped:
+        print(f"sanitize: pruned {dropped} stale Hot entries", file=sys.stderr)
+    return "\n".join(out)
+
+
 def sanitize_main_playlist(path="tttt.m3u"):
     """Decode literal backslash-u escapes in the mirrored primary playlist.
 
@@ -245,7 +313,7 @@ def sanitize_main_playlist(path="tttt.m3u"):
             else:
                 out.append(s[i])
                 i += 1
-        cleaned = "".join(out)
+        cleaned = prune_stale_hot("".join(out))
         if cleaned != orig:
             with open(path, "w", encoding="utf-8") as fh:
                 fh.write(cleaned)
@@ -261,6 +329,8 @@ def main():
     for name, base in SITES:
         entries, hot_entries = scrape_site(name, base)
         for title, stream in hot_entries:
+            if is_stale_hot(title):
+                continue  # finished long ago; site still flags it hot
             if stream not in hot_seen:
                 hot_seen.add(stream)
                 hot_out.append(f'#EXTINF:-1 group-title="{HOT_GROUP}",{title}')
