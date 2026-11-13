@@ -1,32 +1,30 @@
 #!/usr/bin/env python3
 """Best-effort scraper for the xoilac / 90phut / socolive site family.
 
-Each site lists today's matches on /truc-tiep/<slug>/ pages. A match
-page embeds a streamData JSON with "playerHost" plus a match_id in an
-inline script; the playable URL is
+Two stream mechanisms exist in this family (both found live 2026-11-12):
 
-    <playerHost>/default/<match_id>.m3u8
+A) list_stream (xoilac365, 90phut, xoilac86, socolive): the match page
+   carries a JS array `list_stream` of player-page URLs on a per-site
+   host (e.g. https://xl365.domainkqt.cc/ajax/chanel/type/8/link/...).
+   Each player page embeds exactly one direct stream URL (.flv).
 
-— the exact URL the site's own web player builds. This script emits
-extra M3U entries grouped per site, which the mirror workflow appends
-to the main playlist.
+B) inplyr (xoilac3, tructiepbongda): the match page embeds JSON
+   `streamData` with "playerHost" plus an inline `match_id`; the
+   stream URL is <playerHost>/default/<match_id>.m3u8.
 
-Failure policy: any error (site down, layout changed, zero matches)
-yields zero entries for that site and never raises — the main mirror
-must never depend on this script.
+Output: extra M3U entries on stdout, one group per site. Any failure
+anywhere yields fewer entries, never an exception — the mirror's main
+source must stay unaffected.
 """
+import concurrent.futures
+import datetime
 import re
 import sys
 import urllib.request
-from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime, timedelta, timezone
 
-UA = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-        "(KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-    )
-}
+UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+      "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
+ICT = datetime.timezone(datetime.timedelta(hours=7))
 
 SITES = [
     ("Xoilac365", "https://xoilac365j.mobi"),
@@ -37,58 +35,94 @@ SITES = [
     ("TructiepBongDa", "https://tructiepbongda.name"),
 ]
 
-MAX_MATCHES_PER_SITE = 30
-TIMEOUT = 20
-ICT = timezone(timedelta(hours=7))
-
 LINK_RE = re.compile(r'href="((?:https?://[^"/]+)?/truc-tiep/[^"?#]+/)"')
-HOST_RE = re.compile(r'"playerHost"\s*:\s*"([^"]+)"')
+LIST_STREAM_RE = re.compile(r"list_stream\s*=\s*\[(.*?)\];", re.S)
+STREAM_PAGE_RE = re.compile(r'https?:\\?/\\?/[^\s"\'\\]+')
+DIRECT_STREAM_RE = re.compile(r'https?://[^\s"\'<>]+\.(?:flv|m3u8)(?:\?[^\s"\'<>]*)?')
+HOST_RE = re.compile(r'"playerHost"\s*:\s*"(https?://[^"]+)"')
 MID_RE = re.compile(r"match_id\s*=\s*'([A-Za-z0-9]+)'")
-MTIME_RE = re.compile(r'"matchTime"\s*:\s*(\d{9,11})')
+TIME_RE = re.compile(r'"matchTime"\s*:\s*(\d{10})')
+SLUG_DATE_RE = re.compile(r"-(\d{2})-(\d{2})-(\d{4})/?$")
+SLUG_LUC_RE = re.compile(
+    r"^(.*?)-luc-(\d{2})(\d{2})-ngay-(\d{2})-(\d{2})-(\d{4})/?$")
+MAX_MATCHES_PER_SITE = 30
 
 
-def fetch(url):
-    req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
-        return resp.read().decode("utf-8", "ignore")
+def fetch(url, referer=None):
+    headers = {"User-Agent": UA}
+    if referer:
+        headers["Referer"] = referer
+    last_exc = None
+    for attempt in range(2):  # one retry: these sites time out transiently
+        try:
+            req = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                return resp.read().decode("utf-8", "ignore")
+        except Exception as exc:  # noqa: BLE001 - best effort by design
+            last_exc = exc
+    raise last_exc
+
+
+def slug_name(slug):
+    name = SLUG_DATE_RE.sub("", slug)
+    name = re.sub(r"-\d{2}-\d{2}$", "", name)
+    return name.replace("-", " ").strip().title()
 
 
 def title_from(url, html):
-    """Build the app's 'HH:MM DD/MM ⚽ Team A vs Team B' title format.
-
-    Kickoff comes from streamData.matchTime (epoch) when present, else
-    from the slug (-luc-HHMM-ngay-DD-MM-YYYY or a trailing -DD-MM-YYYY).
-    """
-    slug = url.rstrip("/").split("/truc-tiep/")[-1]
-    kick = ""
-    m = re.search(r"-luc-(\d{2})(\d{2})-ngay-(\d{2})-(\d{2})-(\d{4})$", slug)
+    """'HH:MM DD/MM ⚽ Team A vs Team B' in ICT when determinable."""
+    slug = url.rstrip("/").rsplit("/", 1)[-1]
+    m = TIME_RE.search(html)
+    luc = SLUG_LUC_RE.match(slug + "/")
+    when = None
     if m:
-        kick = f"{m.group(1)}:{m.group(2)} {m.group(3)}/{m.group(4)}"
-        core = slug[: m.start()]
-    else:
-        m = re.search(r"-(\d{2})-(\d{2})-(\d{4})$", slug)
-        core = slug[: m.start()] if m else slug
-    mt = MTIME_RE.search(html)
-    if mt:
-        dt = datetime.fromtimestamp(int(mt.group(1)), tz=ICT)
-        kick = dt.strftime("%H:%M %d/%m")
-    title = core.replace("-", " ").strip().title()
-    return f"{kick} ⚽ {title}".strip() if kick else f"⚽ {title}"
+        when = datetime.datetime.fromtimestamp(int(m.group(1)), ICT)
+    elif luc:
+        try:
+            when = datetime.datetime(
+                int(luc.group(6)), int(luc.group(5)), int(luc.group(4)),
+                int(luc.group(2)), int(luc.group(3)), tzinfo=ICT)
+            slug = luc.group(1)
+        except ValueError:
+            when = None
+    name = slug_name(slug)
+    if when:
+        return f"{when:%H:%M %d/%m} ⚽ {name}"
+    return f"⚽ {name}"
 
 
 def scrape_match(url):
-    """Return (title, stream_url) for one match page, or None."""
+    """One match page -> list of (title, stream_url); never raises."""
     try:
         html = fetch(url)
     except Exception:
-        return None
+        return []
+    title = title_from(url, html)
+    out = []
+    block = LIST_STREAM_RE.search(html)
+    if block:
+        pages = []
+        for raw in STREAM_PAGE_RE.findall(block.group(1)):
+            page = raw.replace("\\/", "/")
+            if page not in pages:
+                pages.append(page)
+        for page in pages[:2]:
+            try:
+                player = fetch(page, referer=url)
+            except Exception:
+                continue
+            for stream in DIRECT_STREAM_RE.findall(player):
+                if "lfastcdn" in stream:
+                    continue  # ad assets on the player page
+                out.append((title, stream))
+                break  # one stream per player page
+        if out:
+            return out
     host = HOST_RE.search(html)
     mid = MID_RE.search(html)
-    if not host or not mid:
-        return None
-    host = host.group(1).replace("\\/", "/").rstrip("/")
-    stream = f"{host}/default/{mid.group(1)}.m3u8"
-    return title_from(url, html), stream
+    if host and mid:
+        out.append((title, f"{host.group(1)}/default/{mid.group(1)}.m3u8"))
+    return out
 
 
 def scrape_site(name, base):
@@ -108,13 +142,13 @@ def scrape_site(name, base):
                 seen.add(url)
                 links.append(url)
     links = links[:MAX_MATCHES_PER_SITE]
-    entries = []
-    with ThreadPoolExecutor(max_workers=6) as pool:
-        for result in pool.map(scrape_match, links):
-            if result:
-                entries.append(result)
-    print(f"[{name}] {len(entries)}/{len(links)} match pages yielded streams", file=sys.stderr)
-    return entries
+    results = []
+    with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
+        for found in pool.map(scrape_match, links):
+            results.extend(found)
+    print(f"[{name}] {len(results)} streams from {len(links)} match pages",
+          file=sys.stderr)
+    return results
 
 
 def main():
