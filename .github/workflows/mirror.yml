@@ -31,6 +31,16 @@ jobs:
           test "${COUNT}" -ge 50
           mv tttt.new.m3u tttt.m3u
 
+      - name: Scrape extra sources (best effort)
+        run: |
+          # Appends entries from the xoilac/90phut/socolive family sites
+          # (own groups, after the main list). Any scraper failure just
+          # means fewer extras — it must never block the main mirror.
+          python3 scrape_extra.py > extra.m3u || true
+          echo "Extra entries: $(grep -c '#EXTINF' extra.m3u || true)"
+          cat extra.m3u >> tttt.m3u
+          rm -f extra.m3u
+
       - name: Commit if changed
         run: |
           if git diff --quiet -- tttt.m3u; then
