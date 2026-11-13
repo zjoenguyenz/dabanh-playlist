@@ -218,7 +218,44 @@ def scrape_site(name, base):
     return entries, hot_entries
 
 
+def sanitize_main_playlist(path="tttt.m3u"):
+    """Decode literal backslash-u escapes in the mirrored primary playlist.
+
+    The primary source sometimes ships titles with un-decoded escapes
+    (BLV names). The workflow runs this script right after fetching the
+    primary copy, so cleaning tttt.m3u here covers the whole published
+    file before commit. (This lives here, not in the workflow YAML,
+    because the GitHub integration cannot edit workflow files.)
+    Best effort: any failure leaves the playlist untouched.
+    """
+    try:
+        with open(path, encoding="utf-8", errors="ignore") as fh:
+            orig = fh.read()
+        s = re.sub(r'\\U([0-9a-fA-F]{8})', lambda m: chr(int(m.group(1), 16)), orig)
+        s = re.sub(r'\\[uU]([0-9a-fA-F]{4})', lambda m: chr(int(m.group(1), 16)), s)
+        out, i = [], 0
+        while i < len(s):
+            o = ord(s[i])
+            if 0xD800 <= o <= 0xDBFF and i + 1 < len(s) and 0xDC00 <= ord(s[i + 1]) <= 0xDFFF:
+                out.append(chr(0x10000 + ((o - 0xD800) << 10) + (ord(s[i + 1]) - 0xDC00)))
+                i += 2
+            elif 0xD800 <= o <= 0xDFFF:
+                out.append('\ufffd')
+                i += 1
+            else:
+                out.append(s[i])
+                i += 1
+        cleaned = "".join(out)
+        if cleaned != orig:
+            with open(path, "w", encoding="utf-8") as fh:
+                fh.write(cleaned)
+            print("sanitize: decoded escapes in tttt.m3u", file=sys.stderr)
+    except Exception as e:
+        print(f"sanitize skipped: {e}", file=sys.stderr)
+
+
 def main():
+    sanitize_main_playlist()
     hot_out, out = [], []
     hot_seen, seen_streams = set(), set()
     for name, base in SITES:
