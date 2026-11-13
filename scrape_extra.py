@@ -15,9 +15,9 @@ B) inplyr (xoilac3, tructiepbongda): the match page embeds JSON
    streams are <playerHost>/room/<uid>.m3u8.
 
 Extras beyond plain entries:
-- "🔥 Hot" group, emitted first: matches the sites themselves flag
-  hot on their listings (card class "...-item-hot"), plus every match
-  that has BLV streams (sites only assign commentators to big games).
+- "🔥 Hot" group, emitted first: only the matches the sites
+  themselves flag hot on their listings (card class "...-item-hot"),
+  with their BLV variants included when the flagged match has any.
 - BLV entries: "<title> • BLV <name>" with the room stream.
 
 Output: extra M3U entries on stdout. Any failure anywhere yields
@@ -199,7 +199,10 @@ def scrape_site(name, base):
         for url, found in pool.map(job, links):
             entries.extend(found["main"])
             entries.extend(found["blv"])
-            if url in hot_urls or found["blv"]:
+            # Hot means the SITE flagged the match (item-hot card).
+            # BLV presence is not a hot signal: the inplyr sites attach
+            # their whole commentator roster to every match page.
+            if url in hot_urls:
                 hot_entries.extend(found["main"])
                 hot_entries.extend(found["blv"])
     print(f"[{name}] {len(entries)} streams from {len(links)} match pages"
