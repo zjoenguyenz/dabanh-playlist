@@ -10,11 +10,19 @@ A) list_stream (xoilac365, 90phut, xoilac86, socolive): the match page
 
 B) inplyr (xoilac3, tructiepbongda): the match page embeds JSON
    `streamData` with "playerHost" plus an inline `match_id`; the
-   stream URL is <playerHost>/default/<match_id>.m3u8.
+   stream URL is <playerHost>/default/<match_id>.m3u8. These pages
+   also carry per-match commentator (BLV) anchors "?blv=<uid>" whose
+   streams are <playerHost>/room/<uid>.m3u8.
 
-Output: extra M3U entries on stdout, one group per site. Any failure
-anywhere yields fewer entries, never an exception — the mirror's main
-source must stay unaffected.
+Extras beyond plain entries:
+- "🔥 Hot" group, emitted first: matches the sites themselves flag
+  hot on their listings (card class "...-item-hot"), plus every match
+  that has BLV streams (sites only assign commentators to big games).
+- BLV entries: "<title> • BLV <name>" with the room stream.
+
+Output: extra M3U entries on stdout. Any failure anywhere yields
+fewer entries, never an exception — the mirror's main source must
+stay unaffected.
 """
 import concurrent.futures
 import datetime
@@ -36,16 +44,21 @@ SITES = [
 ]
 
 LINK_RE = re.compile(r'href="((?:https?://[^"/]+)?/truc-tiep/[^"?#]+/)"')
+ANCHOR_RE = re.compile(r"<a\b[^>]*>", re.I)
+HREF_RE = re.compile(r'href="([^"]+)"')
 LIST_STREAM_RE = re.compile(r"list_stream\s*=\s*\[(.*?)\];", re.S)
 STREAM_PAGE_RE = re.compile(r'https?:\\?/\\?/[^\s"\'\\]+')
 DIRECT_STREAM_RE = re.compile(r'https?://[^\s"\'<>]+\.(?:flv|m3u8)(?:\?[^\s"\'<>]*)?')
-HOST_RE = re.compile(r'"playerHost"\s*:\s*"(https?://[^"]+)"')
+HOST_RE = re.compile(r'"playerHost"\s*:\s*"(https?:\\?/\\?/[^"]+)"')
 MID_RE = re.compile(r"match_id\s*=\s*'([A-Za-z0-9]+)'")
+BLV_JSON_RE = re.compile(r'"uid":"(\d+)","nickName":"([^"]+)","roomID":"(\d+)"')
 TIME_RE = re.compile(r'"matchTime"\s*:\s*(\d{10})')
+BLV_RE = re.compile(r'<a href="([^"]*)\?blv=(\d+)"[^>]*>(.*?)</a>', re.S)
 SLUG_DATE_RE = re.compile(r"-(\d{2})-(\d{2})-(\d{4})/?$")
 SLUG_LUC_RE = re.compile(
     r"^(.*?)-luc-(\d{2})(\d{2})-ngay-(\d{2})-(\d{2})-(\d{4})/?$")
 MAX_MATCHES_PER_SITE = 30
+HOT_GROUP = "🔥 Hot"
 
 
 def fetch(url, referer=None):
@@ -53,7 +66,7 @@ def fetch(url, referer=None):
     if referer:
         headers["Referer"] = referer
     last_exc = None
-    for attempt in range(2):  # one retry: these sites time out transiently
+    for _ in range(2):  # one retry: these sites time out transiently
         try:
             req = urllib.request.Request(url, headers=headers)
             with urllib.request.urlopen(req, timeout=20) as resp:
@@ -92,13 +105,14 @@ def title_from(url, html):
 
 
 def scrape_match(url):
-    """One match page -> list of (title, stream_url); never raises."""
+    """One match page -> dict(main=[(title, stream)], blv=[(title,
+    stream)]); never raises."""
+    result = {"main": [], "blv": []}
     try:
         html = fetch(url)
     except Exception:
-        return []
+        return result
     title = title_from(url, html)
-    out = []
     block = LIST_STREAM_RE.search(html)
     if block:
         pages = []
@@ -114,55 +128,105 @@ def scrape_match(url):
             for stream in DIRECT_STREAM_RE.findall(player):
                 if "lfastcdn" in stream:
                     continue  # ad assets on the player page
-                out.append((title, stream))
+                result["main"].append((title, stream))
                 break  # one stream per player page
-        if out:
-            return out
+        if result["main"]:
+            return result
     host = HOST_RE.search(html)
     mid = MID_RE.search(html)
     if host and mid:
-        out.append((title, f"{host.group(1)}/default/{mid.group(1)}.m3u8"))
-    return out
+        base = host.group(1).replace("\\/", "/")
+        result["main"].append((title, f"{base}/default/{mid.group(1)}.m3u8"))
+        seen_rooms = set()
+
+        def add_blv(name, room):
+            name = re.sub(r"\s+", " ", name).strip()
+            if not name or len(name) > 40 or room in seen_rooms:
+                return
+            seen_rooms.add(room)
+            if not name.upper().startswith("BLV"):
+                name = "BLV " + name.title()
+            result["blv"].append(
+                (f"{title} • {name}", f"{base}/room/{room}.m3u8"))
+
+        # Primary source: the commentator array inside streamData JSON
+        # (uid / nickName / roomID per commentator).
+        for _uid, nick, room in BLV_JSON_RE.findall(html):
+            add_blv(nick, room)
+        # Fallback only when the JSON array named nobody: self-
+        # referential ?blv=<uid> anchors on the page (uid as room).
+        if not result["blv"]:
+            path = "/" + url.split("/", 3)[-1]  # this match's own path
+            for href, uid, inner in BLV_RE.findall(html):
+                if href.endswith(path):
+                    add_blv(re.sub(r"<[^>]+>", " ", inner), uid)
+    return result
 
 
 def scrape_site(name, base):
-    # Match links live both on the homepage and on the /truc-tiep/
-    # index; which one carries them differs per site in this family.
+    """-> (entries, hot_entries): [(title, stream)] each."""
     links = []
     seen = set()
+    hot_urls = set()
     for page in (base + "/", base + "/truc-tiep/"):
         try:
             html = fetch(page)
         except Exception as exc:
             print(f"[{name}] {page} failed: {exc}", file=sys.stderr)
             continue
-        for raw in LINK_RE.findall(html):
-            url = raw if raw.startswith("http") else base + raw
+        for tag in ANCHOR_RE.findall(html):
+            hm = HREF_RE.search(tag)
+            if not hm:
+                continue
+            raw = hm.group(1)
+            m = re.search(r"((?:https?://[^\"/]+)?/truc-tiep/[^\"?#]+/)$", raw)
+            if not m:
+                continue
+            url = m.group(1)
+            url = url if url.startswith("http") else base + url
+            if "item-hot" in tag:
+                hot_urls.add(url)
             if url not in seen:
                 seen.add(url)
                 links.append(url)
     links = links[:MAX_MATCHES_PER_SITE]
-    results = []
+
+    def job(url):
+        return url, scrape_match(url)
+
+    entries, hot_entries = [], []
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
-        for found in pool.map(scrape_match, links):
-            results.extend(found)
-    print(f"[{name}] {len(results)} streams from {len(links)} match pages",
-          file=sys.stderr)
-    return results
+        for url, found in pool.map(job, links):
+            entries.extend(found["main"])
+            entries.extend(found["blv"])
+            if url in hot_urls or found["blv"]:
+                hot_entries.extend(found["main"])
+                hot_entries.extend(found["blv"])
+    print(f"[{name}] {len(entries)} streams from {len(links)} match pages"
+          f" ({len(hot_entries)} hot)", file=sys.stderr)
+    return entries, hot_entries
 
 
 def main():
-    out = []
-    seen_streams = set()
+    hot_out, out = [], []
+    hot_seen, seen_streams = set(), set()
     for name, base in SITES:
-        for title, stream in scrape_site(name, base):
+        entries, hot_entries = scrape_site(name, base)
+        for title, stream in hot_entries:
+            if stream not in hot_seen:
+                hot_seen.add(stream)
+                hot_out.append(f'#EXTINF:-1 group-title="{HOT_GROUP}",{title}')
+                hot_out.append(stream)
+        for title, stream in entries:
             if stream in seen_streams:
                 continue  # sister sites carry identical schedules/streams
             seen_streams.add(stream)
             out.append(f'#EXTINF:-1 group-title="{name}",{title}')
             out.append(stream)
-    sys.stdout.write("\n".join(out) + ("\n" if out else ""))
-    print(f"Total extra entries: {len(out) // 2}", file=sys.stderr)
+    lines = hot_out + out
+    sys.stdout.write("\n".join(lines) + ("\n" if lines else ""))
+    print(f"Total extra entries: {len(lines) // 2} "
+          f"(hot: {len(hot_out) // 2})", file=sys.stderr)
 
 
 if __name__ == "__main__":
