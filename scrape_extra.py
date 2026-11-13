@@ -286,6 +286,108 @@ def prune_stale_hot(text):
     return "\n".join(out)
 
 
+DEAD_DROP_FLOOR = 0.35  # probe-drops above this share => distrust the prober
+
+
+def _block_url_headers(block):
+    """(url, headers) of one entry block: the stream URL plus the
+    playback headers the entry itself declares via #EXTVLCOPT."""
+    url, headers = None, {}
+    for ln in block:
+        if ln.startswith("#EXTVLCOPT:http-referrer="):
+            headers["Referer"] = ln.split("=", 1)[1].strip()
+        elif ln.startswith("#EXTVLCOPT:http-user-agent="):
+            headers["User-Agent"] = ln.split("=", 1)[1].strip()
+        elif ln.startswith(("http://", "https://")):
+            url = ln.strip()
+    return url, headers
+
+
+def _probe_alive(url, headers):
+    """True = keep the entry. Only VANTAGE-INDEPENDENT death returns
+    False: HTTP 404/410 (the URL itself is gone — true from anywhere)
+    or a 200 whose body is not a playlist (for .m3u8). Everything else
+    keeps the entry: connect/DNS failures and timeouts depend on where
+    the probe runs (measured 2026-11-13: every inplyr link fails to
+    connect from a datacenter vantage yet plays fine from the user's
+    TV), and geo/auth blocks (403/401) are exactly what the apps'
+    Vietnam tunnel exists for."""
+    h = {"User-Agent": headers.get("User-Agent", UA)}
+    if "Referer" in headers:
+        h["Referer"] = headers["Referer"]
+    try:
+        req = urllib.request.Request(url, headers=h)
+    except Exception:  # noqa: BLE001 - unbuildable URL: keep, apps cope
+        return True
+    try:
+        with urllib.request.urlopen(req, timeout=6) as resp:
+            body = resp.read(2048)
+            if ".m3u8" in url.split("?")[0]:
+                return b"#EXTM3U" in body
+            return len(body) > 0
+    except urllib.error.HTTPError as e:
+        return e.code not in (404, 410)
+    except Exception:  # noqa: BLE001 - vantage-dependent: keep
+        return True
+
+
+def filter_dead_links(text):
+    """Drop filler + definitively-dead entries from playlist text.
+
+    Filler: '/no-signal/' placeholder slates (freem3u) — not content.
+    The rest are probed in parallel with each entry's own declared
+    headers. A safety floor aborts probe-drops (filler still goes) if
+    too large a share would drop, e.g. if the runner's network is bad.
+    """
+    lines = text.split("\n")
+    head, blocks, i = [], [], 0
+    while i < len(lines) and not lines[i].startswith("#EXTINF"):
+        head.append(lines[i])
+        i += 1
+    while i < len(lines):
+        j = i + 1
+        while j < len(lines) and not lines[j].startswith("#EXTINF"):
+            j += 1
+        blocks.append(lines[i:j])
+        i = j
+    keep, jobs, filler = [], [], 0
+    for b in blocks:
+        url, headers = _block_url_headers(b)
+        if url is None:
+            keep.append(b)
+        elif "/no-signal/" in url:
+            filler += 1
+        else:
+            jobs.append((b, url, headers))
+    dead = set()
+    if jobs:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=24) as ex:
+            futs = {ex.submit(_probe_alive, u, h): k
+                    for k, (_, u, h) in enumerate(jobs)}
+            for fut in concurrent.futures.as_completed(futs):
+                if not fut.result():
+                    dead.add(futs[fut])
+    if jobs and len(dead) / len(jobs) > DEAD_DROP_FLOOR:
+        print(f"validate: {len(dead)}/{len(jobs)} probe-dead exceeds "
+              f"floor; keeping all probed entries", file=sys.stderr)
+        dead = set()
+    dropped_hosts = {}
+    for k, (b, url, _) in enumerate(jobs):
+        if k in dead:
+            host = url.split("/")[2] if "://" in url else "?"
+            dropped_hosts[host] = dropped_hosts.get(host, 0) + 1
+        else:
+            keep.append(b)
+    if dead or filler:
+        top = sorted(dropped_hosts.items(), key=lambda kv: -kv[1])[:5]
+        print(f"validate: probed {len(jobs)}, dropped dead {len(dead)} "
+              f"{top}, dropped filler {filler}", file=sys.stderr)
+    out = list(head)
+    for b in keep:
+        out.extend(b)
+    return "\n".join(out)
+
+
 def sanitize_main_playlist(path="tttt.m3u"):
     """Decode literal backslash-u escapes in the mirrored primary playlist.
 
@@ -313,7 +415,7 @@ def sanitize_main_playlist(path="tttt.m3u"):
             else:
                 out.append(s[i])
                 i += 1
-        cleaned = prune_stale_hot("".join(out))
+        cleaned = filter_dead_links(prune_stale_hot("".join(out)))
         if cleaned != orig:
             with open(path, "w", encoding="utf-8") as fh:
                 fh.write(cleaned)
