@@ -140,6 +140,14 @@ def scrape_match(url):
         seen_rooms = set()
 
         def add_blv(name, room):
+            # nickName arrives as raw JSON text: decode \uXXXX escapes into
+            # real characters FIRST. Without this, name.title() below chews
+            # the escapes into garbage like "Nh\U1Eca Ca" (seen live
+            # 2026-11-13 in the published mirror).
+            name = re.sub(r"\\u([0-9a-fA-F]{4})",
+                          lambda m: chr(int(m.group(1), 16)), name)
+            name = re.sub(r"\\U([0-9a-fA-F]{8})",
+                          lambda m: chr(int(m.group(1), 16)), name)
             name = re.sub(r"\s+", " ", name).strip()
             if not name or len(name) > 40 or room in seen_rooms:
                 return
