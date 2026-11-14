@@ -430,6 +430,38 @@ def sanitize_main_playlist(path="tttt.m3u"):
         print(f"sanitize skipped: {e}", file=sys.stderr)
 
 
+def _imports_lines(seen_urls):
+    """Entries carried over from the TV-list cleanup (582049.m3u, repo root).
+
+    Static farm channels harvested once from the owner's TV exports:
+    alive-or-unverifiable from the checking vantage and not already in
+    the football playlist at harvest time. Emitted verbatim (EXTINF +
+    opts + URL) after the scraped extras, skipping anything the fresh
+    main playlist or this run's extras already carry. Best effort: any
+    failure just means no imports this run.
+    """
+    try:
+        with open("582049.m3u", encoding="utf-8", errors="ignore") as fh:
+            text = fh.read()
+    except Exception:
+        return [], 0
+    out, cur, n = [], None, 0
+    for line in text.splitlines():
+        if line.startswith('#EXTINF'):
+            cur = [line]
+        elif line.startswith('#') and cur is not None:
+            cur.append(line)
+        elif line.strip() and cur is not None:
+            url = line.strip()
+            if url not in seen_urls:
+                seen_urls.add(url)
+                out.extend(cur)
+                out.append(url)
+                n += 1
+            cur = None
+    return out, n
+
+
 def main():
     sanitize_main_playlist()
     hot_out, out = [], []
@@ -450,9 +482,17 @@ def main():
             out.append(f'#EXTINF:-1 group-title="{name}",{title}')
             out.append(stream)
     lines = hot_out + out
-    sys.stdout.write("\n".join(lines) + ("\n" if lines else ""))
-    print(f"Total extra entries: {len(lines) // 2} "
-          f"(hot: {len(hot_out) // 2})", file=sys.stderr)
+    seen_urls = set(hot_seen) | set(seen_streams)
+    try:
+        with open("tttt.m3u", encoding="utf-8", errors="ignore") as fh:
+            seen_urls |= {ln.strip() for ln in fh if ln.startswith("http")}
+    except Exception:
+        pass
+    imp_lines, imp_n = _imports_lines(seen_urls)
+    all_lines = lines + imp_lines
+    sys.stdout.write("\n".join(all_lines) + ("\n" if all_lines else ""))
+    print(f"Total extra entries: {len(lines) // 2 + imp_n} "
+          f"(hot: {len(hot_out) // 2}, imports: {imp_n})", file=sys.stderr)
 
 
 if __name__ == "__main__":
