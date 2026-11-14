@@ -355,6 +355,12 @@ def filter_dead_links(text):
         url, headers = _block_url_headers(b)
         if url is None:
             keep.append(b)
+        elif 'group-title="Updated ' in b[0]:
+            # Freshness-stamp pseudo-entry: its URL is a no-signal slate
+            # BY DESIGN — the apps read the mirror's generation time from
+            # this entry. Never treat it as filler (bug 2026-11-13: the
+            # /no-signal/ rule below silently stripped it every run).
+            keep.append(b)
         elif "/no-signal/" in url:
             filler += 1
         else:
