@@ -41,6 +41,16 @@ jobs:
           cat extra.m3u >> tttt.m3u
           rm -f extra.m3u
 
+      - name: Append EN block (best effort)
+        run: |
+          # Appends the curated English-commentary backup block
+          # (group "EN · BLV Anh") after the extras. Any failure just
+          # means no EN block this cycle — it must never block the mirror.
+          python3 scrape_en.py > en.m3u || true
+          echo "EN entries: $(grep -c '#EXTINF' en.m3u || true)"
+          cat en.m3u >> tttt.m3u
+          rm -f en.m3u
+
       - name: Commit if changed
         run: |
           if git diff --quiet -- tttt.m3u; then
