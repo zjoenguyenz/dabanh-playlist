@@ -1,1 +1,120 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJFbmdsaXNoLWNvbW1lbnRhcnkgYmFja3VwIGJsb2NrIGZvciB0aGUgZGFiYW5oIHBsYXlsaXN0IG1pcnJvci4KCkVtaXRzIE0zVSBlbnRyaWVzIChzdGRvdXQpIGZvciBhIGN1cmF0ZWQgc2V0IG9mIEVuZ2xpc2gtbGFuZ3VhZ2Ugc3BvcnRzCmNoYW5uZWxzLCBncm91cCAiRU4gwrcgQkxWIEFuaCIsIG1lYW50IHRvIGJlIGFwcGVuZGVkIEFGVEVSIHRoZSB3aG9sZQpWaWV0bmFtZXNlIGxpc3QgaW4gdHR0dC5tM3UuIFNlbGVjdGlvbiAob3duZXIsIDIwMjYtMTEtMTQpOiBiZXN0IG1lYXN1cmVkCmltYWdlIHF1YWxpdHkgZmlyc3QgKHRydWUgMTA4MHAgd2hlcmUgaXQgZXhpc3RzKSwgdGhlbiBsb3dlc3QgbGF0ZW5jeTsKdGhlIGJsb2NrIHN0YW5kcyBvbiBzZXZlcmFsIGluZGVwZW5kZW50IHVwc3RyZWFtcyBzbyBvbmUgZGVhZCB1cHN0cmVhbQpvbmx5IGNvc3RzIGl0cyBvd24gY2hhbm5lbHMuCgpEeW5hbWljIFVSTHMgKFh1bW8gdmlhIHRoZSBCdWRkeUNoZXdDaGV3IGdlbmVyYXRvciwgV3VybCB2aWEgYXBzYXR0dikKY2Fycnkgc2Vzc2lvbiBhZCBwYXJhbWV0ZXJzLCBzbyB0aGV5IGFyZSByZS1wdWxsZWQgZnJvbSB0aGUgZnJlc2hlc3QKZ2VuZXJhdG9yIGxpc3RzIG9uIGV2ZXJ5IHJ1bjsgdGhlIGNvbnN0YW50cyBiZWxvdyBhcmUgdGhlIGxhc3QgdmVyaWZpZWQKc25hcHNob3QgKDIwMjYtMTEtMTQsIHNhbXBsZS1wbGF5ZWQgZW5kIHRvIGVuZCBmcm9tIGEgVVMgSVApIHVzZWQgb25seQp3aGVuIGEgZnJlc2ggcHVsbCBmYWlscy4gU3RhdGljIFVSTHMgKEFtYWdpLCBHb29nbGUgREFJLCB0aGUgRVNQTiBwYW5lbCkKaGF2ZSBubyBzZXNzaW9uIHBhcmFtZXRlcnMuIEV2ZXJ5IGVtaXR0ZWQgVVJMIGlzIGhlYWx0aC1jaGVja2VkCihtYXN0ZXIgcGxheWxpc3QgbXVzdCBhbnN3ZXIgMjAwIGFuZCBsb29rIGxpa2UgSExTKTsgZGVhZCBlbnRyaWVzIGFyZQpkcm9wcGVkIGZvciB0aGF0IHJ1bi4gQW55IGZhaWx1cmUgYW55d2hlcmUgeWllbGRzIGZld2VyIGVudHJpZXMsIG5ldmVyCmFuIGVycm9yOiB0aGlzIHNjcmlwdCBtdXN0IG5ldmVyIGJsb2NrIHRoZSBtaXJyb3IuCiIiIgppbXBvcnQgc3lzCmltcG9ydCB1cmxsaWIucmVxdWVzdAoKVUEgPSAoIk1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAiCiAgICAgICIoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS8xMzAuMC4wLjAgU2FmYXJpLzUzNy4zNiIpCkdST1VQID0gIkVOIMK3IEJMViBBbmgiCgpYVU1PX0xJU1QgPSAoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9CdWRkeUNoZXdDaGV3LyIKICAgICAgICAgICAgICJ4dW1vLXBsYXlsaXN0LWdlbmVyYXRvci9yZWZzL2hlYWRzL21haW4vcGxheWxpc3RzLyIKICAgICAgICAgICAgICJ4dW1vX3BsYXlsaXN0Lm0zdSIpClVTTEdfTElTVCA9ICJodHRwczovL3d3dy5hcHNhdHR2LmNvbS91c2xnLm0zdSIKVklaSU9fTElTVCA9ICJodHRwczovL3d3dy5hcHNhdHR2LmNvbS92aXppby5tM3UiCgojIExhc3QgdmVyaWZpZWQgc25hcHNob3QsIDIwMjYtMTEtMTQgKGZhbGxiYWNrcyBvbmx5KS4KRkFMTEJBQ0sgPSB7CiAgICAiZm94IjogImh0dHBzOi8vZGJyYjQ5cGpveW1nNC5jbG91ZGZyb250Lm5ldC8xMDAwMS85OTk5MTE5Ni9obHMveHVtby5tM3U4P2Fkcy54dW1vX2NoYW5uZWxJZD05OTk5MTE5NiZhZHMuX2Z3X2lmYV90eXBlPSZhZHMuX2Z3X2RpZD00OTFkYWFlOC1hYjMxLTQ1NDMtYWFjYy1kYTFlMDk2ZjAyZjImYWRzLmFtem5hcHBJZD0mYWRzLmxhdD0mYWRzLmxvbj0mYWRzLm9zPSZhZHMub3N2PSZhZHMuYXNudz0mYWRzLmNhaWQ9Rm94U3BvcnRzJmFkcy5jc2lkPXh1bW9fd2ViX0ZveFNwb3J0c19zc2FpJmFkcy5fZndfaXNfbGF0PTAmYWRzLl9md191c19wcml2YWN5PSZhZHMuX2Z3X2NvcHBhPTAmYWRzLmdlbnJlPVNwb3J0LFNwb3J0cyxTQSxTQyxTRSxTTiZhZHMuX2Z3X2NvbnRlbnRfY2F0ZWdvcnk9JmFkcy5fZndfY29udGVudF9sYW5ndWFnZT1lbiZhZHMuX2Z3X2NvbnRlbnRfZ2VucmU9U3BvcnQsU3BvcnRzLFNBLFNDLFNFLFNOJmFkcy5fZndfY29udGVudF9yYXRpbmc9JmFkcy54dW1vX2NvbnRlbnRJZD0xNDImYWRzLnh1bW9fY29udGVudE5hbWU9Rm94U3BvcnRzJmFkcy54dW1vX3Byb3ZpZGVySWQ9MTQyJmFkcy54dW1vX3Byb3ZpZGVyTmFtZT1Gb3hTcG9ydHMmYWRzLl9md19kZXZpY2VNYWtlPUdpdEh1YkFjdGlvbiZhZHMuX2Z3X2RldmljZV9tb2RlbD1QeXRob25TY3JpcHQmYWRzLmNoYW5uZWxJZD05OTk5MTE5NiZhZHMueHVtb19wbGF0Zm9ybT13ZWImYWRzLnNpdGVfaWQ9JmFkcy5hcHBOYW1lPXh1bW8mYWRzLmFwcFZlcnNpb249MS4wLjAmYWRzLl9md19hcHBfYnVuZGxlPXdlYi54dW1vLmNvbSZhZHMuX2Z3X2FwcF9zdG9yZV91cmw9IiwKICAgICJmdWJvIjogImh0dHBzOi8vZGJyYjQ5cGpveW1nNC5jbG91ZGZyb250Lm5ldC8xMDAwMS85OTk1MTU0OC9obHMvbWFzdGVyLm0zdTg/aW5jbHVkZUFzc2V0VGFncz10cnVlJmFkcy54dW1vX2NoYW5uZWxJZD05OTk1MTU0OCZhZHMueHVtb19zdHJlYW1JZD05OTk1MTU0OCZhZHMuY2hhbm5lbElkPTk5OTUxNTQ4JmFkcy5jaGFubmVsTmFtZT1GdWJvVFYmYWRzLmNhaWQ9RnVib1RWJmFkcy5jc2lkPXh1bW9fd2ViX0Z1Ym9UVl9zc2FpJmFkcy5nZW5yZT1TcG9ydCxTcG9ydHMsU0MsU0UsU04sSUFCMTcmYWRzLl9md19jb250ZW50X2dlbnJlPVNwb3J0LFNwb3J0cyxTQyxTRSxTTixJQUIxNyZhZHMuX2Z3X2NvcHBhPTAuMCZhZHMueHVtb19jb250ZW50SWQ9MTA0NiZhZHMueHVtb19jb250ZW50TmFtZT1GdWJvVFYmYWRzLnh1bW9fcHJvdmlkZXJJZD0xMDQ2JmFkcy54dW1vX3Byb3ZpZGVyTmFtZT1GdWJvVFYmYWRzLmFzbnc9JmFkcy54dW1vX2NoYW5uZWxOYW1lPUZ1Ym9UViZhZHMuX2Z3X2hfeF9jb3VudHJ5PVVTJmFkcy5fZndfaWZhX3R5cGU9JmFkcy5fZndfZGlkPTJlZTA0MGIxLWQ0MTUtNGM4NS1iMDY5LTZlODcwMGU2YjAwZSZhZHMuYW16bmFwcElkPSZhZHMubGF0PSZhZHMubG9uPSZhZHMub3M9JmFkcy5vc3Y9JmFkcy5fZndfaXNfbGF0PTAmYWRzLl9md191c19wcml2YWN5PSZhZHMuX2Z3X2NvbnRlbnRfY2F0ZWdvcnk9JmFkcy5fZndfY29udGVudF9sYW5ndWFnZT1lbiZhZHMuX2Z3X2NvbnRlbnRfcmF0aW5nPSZhZHMuX2Z3X2RldmljZU1ha2U9R2l0SHViQWN0aW9uJmFkcy5fZndfZGV2aWNlX21vZGVsPVB5dGhvblNjcmlwdCZhZHMueHVtb19wbGF0Zm9ybT13ZWImYWRzLnNpdGVfaWQ9JmFkcy5hcHBWZXJzaW9uPTEuMC4wJmFkcy5fZndfYXBwX2J1bmRsZT13ZWIueHVtby5jb20mYWRzLl9md19hcHBfc3RvcmVfdXJsPSZhZHMuYXBwTmFtZT14dW1vIiwKICAgICJuYmMiOiAiaHR0cHM6Ly9kNHdobXZ3bTByZHZpLmNsb3VkZnJvbnQubmV0LzEwMDA3Lzk5OTUxMjUzL2hscy9tYXN0ZXIubTN1OD9pbmNsdWRlQXNzZXRUYWdzPXRydWUmYWRzLnh1bW9fY2hhbm5lbElkPTk5OTUxMjUzJmFkcy54dW1vX3N0cmVhbUlkPTk5OTUxMjUzJmFkcy5jaGFubmVsSWQ9OTk5NTEyNTMmYWRzLmFzbnc9MTY5ODQzJmFkcy5hZmlkPTM4MDc1MzkyNSZhZHMuc2ZpZD0xOTIwODEyOCZhZHMuY3NpZD14dW1vX3dlYl9OQkNVU3BvcnRzX3NzYWlfY3JvJmFkcy5fZndfY29wcGE9MCZhZHMueHVtb19jb250ZW50SWQ9MzkyOSZhZHMueHVtb19jb250ZW50TmFtZT1OQkNVU3BvcnRzJmFkcy54dW1vX3Byb3ZpZGVySWQ9MzkyOSZhZHMueHVtb19wcm92aWRlck5hbWU9TkJDVVNwb3J0cyZhZHMuY2FpZD0mYWRzLl9md19pc19sYXQ9MCZhZHMuX2Z3X3VzX3ByaXZhY3k9JmFkcy5fZndfZGlkPTM4Mjk4MjMxLTdlZjMtNGZkOC04ZWY3LTI0ZTUyNzk4N2IyOCZhZHMuX2Z3X3ZjaWQyPTUxMjExNjozODI5ODIzMS03ZWYzLTRmZDgtOGVmNy0yNGU1Mjc5ODdiMjgmYWRzLl9md19hcHBfYnVuZGxlPSZhZHMuX2Z3X2FwcF9zdG9yZV91cmw9JmFkcy5fZndfZGV2aWNlTWFrZT0mYWRzLl9md19kZXZpY2VfbW9kZWw9JmFkcy5fZndfZGV2aWNlVHlwZT0zLUNvbm5lY3RlZF9UViZhZHMuYXBwVmVyc2lvbj0xLjAuMCZhZHMuX2Z3X2lmYV90eXBlPSZhZHMuYXBwTmFtZT1YdW1vUGxheSZhZHMuX2Z3X2NvbnRlbnRfY2F0ZWdvcnk9JmFkcy5fZndfY29udGVudF9nZW5yZT0mYWRzLl9md19jb250ZW50X2xhbmd1YWdlPWVuJmFkcy5fZndfY29udGVudF9yYXRpbmc9IiwKICAgICJzdGFkaXVtIjogImh0dHBzOi8vd3VybDEyMHNwb3J0cy5nbG9iYWwudHJhbnNtaXQubGl2ZS9obHMvNjg2M2Y0MjYyMzNlNjYwNGI4YjQ1ODMyL3YxL3N0YWRpdW1fZ3JhY2Vub3RlL2xnX3VzL2xhdGVzdC9tYWluL2hscy9wbGF5bGlzdC5tM3U4P3d1cmxfY2hhbm5lbD0xNjAmd3VybF9uYW1lPVN0YWRpdW0mY29wcGE9MCZ1aWQ9W0RFVklDRV9JRF0mcmRpZD1bSUZBXSZpZmF0eXBlPVtJRkFfVFlQRV0mZG50PVtMTVRdJmRvbm90c2VsbD1bRE5TXSZpc2dkcHI9W0dEUFJdJmdkcHI9W0dEUFJfQ09OU0VOVF0mY291bnRyeT1bQ09VTlRSWV0mcHI9W1VTX1BSSVZBQ1ldJmFwcHN0b3JldXJsPVtBUFBfU1RPUkVVUkxdJmJ1bmRsZWlkPVtBUFBfQlVORExFXSZhcHBuYW1lPVtBUFBfTkFNRV0mYXBwdmVyc2lvbj1bQVBQX1ZFUlNJT05dJmR0PVtERVZJQ0VfVFlQRV0mbWFrZT1bREVWSUNFX01BS0VdJm1vZGVsPVtERVZJQ0VfTU9ERUxdJnRhcmdldGFkPVtUQVJHRVRBRF9BTExPV0VEXSZmY2s9W0ZDS10mdmlld3NpemU9W1ZJRVdTSVpFXSZub25jZT1bTk9OQ0VdIiwKICAgICJmaWZhIjogImh0dHBzOi8vOTVjZWRlYmQud3VybC5jb20vbWFzdGVyL2YzNmQyNWU3ZTUyZjFiYThkN2U1NmViODU5YzYzNjU2MzIxNGY1NDEvVm1sNmFXOWZSa2xHUVZCc2RYTkZibWRzYVhOb1gwaE1Vdy9wbGF5bGlzdC5tM3U4P2Fkcy53dXJsX2NoYW5uZWw9MTg1NCZhZHMud3VybF9uYW1lPUZJRkFQbHVzRW5nbGlzaCZhZHMuY29wcGE9MCZhZHMucHNpZD0lN2JBRElEJTdkJmFkcy50YXJnZXRvcHQ9JTdiVEFSR0VUT1BUJTdkJmFkcy51c19wcml2YWN5PSU3YlVTUFJJVkFDWSU3ZCZhZHMuaWZhX3R5cGU9JTdiSUZBVFlQRSU3ZCZhZHMubG10PSU3YkxNVCU3ZCZhZHMuYXBwX2J1bmRsZT0lN2JBUFBfQlVORExFJTdkJmFkcy5hcHBfbmFtZT0lN2JBUFBfTkFNRSU3ZCZhZHMuYXBwX3N0b3JlX3VybD0lN2JBUFBfU1RPUkVfVVJMJTdkJmFkcy51cmw9JTdiRE9NQUlOJTdkJmFkcy53PSU3YldJRFRIJTdkJmFkcy5oPSU3YkhFSUdIVCU3ZCZhZHMuZGV2aWNlX21ha2U9JTdiREVWSUNFX01BS0UlN2QmYWRzLnZpemRhcnRva2VuPWV5SmhkV1FpT2lJNU9DSXNJbmRtY0dOcFpDSTZORFUwTnpreU56YzNNSDAiLAp9CgpTVEFUSUMgPSB7CiAgICAiZ29sYXpvIjogKCJodHRwczovL2RhaS5nb29nbGUuY29tL2xpbmVhci9obHMvZXZlbnQvIgogICAgICAgICAgICAgICAiN2YzV3Y2ZjdRRUtmUW5hMjJqSHFMUS9tYXN0ZXIubTN1OCIpLAogICAgImJlaW5feHRyYSI6ICJodHRwczovL2JlaW4teHRyYS1iZWluLmFtYWdpLnR2L3BsYXlsaXN0Lm0zdTgiLAogICAgImZzMSI6ICJodHRwOi8vODUuMjM3Ljg5LjE2MDo5NTkwL3VzYS1zL0ZPWC1TUE9SVFMtMS9pbmRleC5tM3U4IiwKICAgICJlc3BuIjogImh0dHA6Ly84NS4yMzcuODkuMTYwOjk1OTAvdXNhLXMvRVNQTi1IRC9pbmRleC5tM3U4IiwKICAgICJlc3BuMiI6ICJodHRwOi8vODUuMjM3Ljg5LjE2MDo5NTkwL3VzYS1zL0VTUE4tMi1IRC9pbmRleC5tM3U4IiwKICAgICJlc3BudSI6ICJodHRwOi8vODUuMjM3Ljg5LjE2MDo5NTkwL3VzYS1zL0VTUE4tVS1IRC9pbmRleC5tM3U4IiwKfQoKCmRlZiBmZXRjaCh1cmwsIHRpbWVvdXQ9MzApOgogICAgcmVxID0gdXJsbGliLnJlcXVlc3QuUmVxdWVzdCh1cmwsIGhlYWRlcnM9eyJVc2VyLUFnZW50IjogVUF9KQogICAgd2l0aCB1cmxsaWIucmVxdWVzdC51cmxvcGVuKHJlcSwgdGltZW91dD10aW1lb3V0KSBhcyByOgogICAgICAgIHJldHVybiByLnJlYWQoKS5kZWNvZGUoInV0Zi04IiwgInJlcGxhY2UiKQoKCmRlZiBleHRyYWN0KGxpc3RfdGV4dCwgbWF0Y2gpOgogICAgIiIiVVJMIGZvbGxvd2luZyB0aGUgI0VYVElORiB3aG9zZSB0aXRsZSBzYXRpc2ZpZXMgbWF0Y2godGl0bGUpLiIiIgogICAgbGluZXMgPSBsaXN0X3RleHQuc3BsaXRsaW5lcygpCiAgICBmb3IgaSwgbGluZSBpbiBlbnVtZXJhdGUobGluZXMpOgogICAgICAgIGlmIGxpbmUuc3RhcnRzd2l0aCgiI0VYVElORiIpOgogICAgICAgICAgICB0aXRsZSA9IGxpbmUuc3BsaXQoIiwiLCAxKVstMV0uc3RyaXAoKQogICAgICAgICAgICBpZiBtYXRjaCh0aXRsZSkgYW5kIGkgKyAxIDwgbGVuKGxpbmVzKToKICAgICAgICAgICAgICAgIHJldHVybiBsaW5lc1tpICsgMV0uc3RyaXAoKQogICAgcmV0dXJuIE5vbmUKCgpkZWYgaGVhbHRoeSh1cmwpOgogICAgdHJ5OgogICAgICAgIHJlcSA9IHVybGxpYi5yZXF1ZXN0LlJlcXVlc3QodXJsLCBoZWFkZXJzPXsiVXNlci1BZ2VudCI6IFVBfSkKICAgICAgICB3aXRoIHVybGxpYi5yZXF1ZXN0LnVybG9wZW4ocmVxLCB0aW1lb3V0PTE1KSBhcyByOgogICAgICAgICAgICBoZWFkID0gci5yZWFkKDUxMikuZGVjb2RlKCJ1dGYtOCIsICJyZXBsYWNlIikKICAgICAgICAgICAgcmV0dXJuIHIuc3RhdHVzID09IDIwMCBhbmQgIiNFWFRNM1UiIGluIGhlYWQKICAgIGV4Y2VwdCBFeGNlcHRpb246CiAgICAgICAgcmV0dXJuIEZhbHNlCgoKZGVmIGR5bmFtaWMobGlzdF91cmwsIG1hdGNoLCBrZXkpOgogICAgdHJ5OgogICAgICAgIHVybCA9IGV4dHJhY3QoZmV0Y2gobGlzdF91cmwpLCBtYXRjaCkKICAgICAgICBpZiB1cmw6CiAgICAgICAgICAgIHJldHVybiB1cmwKICAgIGV4Y2VwdCBFeGNlcHRpb24gYXMgZXhjOgogICAgICAgIHByaW50KGYiW2VuXSB7a2V5fTogZnJlc2ggcHVsbCBmYWlsZWQ6IHtleGN9IiwgZmlsZT1zeXMuc3RkZXJyKQogICAgcmV0dXJuIEZBTExCQUNLW2tleV0KCgpkZWYgbWFpbigpOgogICAgZW50cmllcyA9IFsKICAgICAgICAjIDEwODBwIGdyb3VwIGZpcnN0IChxdWFsaXR5IHByaW9yaXR5KSwgb3JkZXJlZCBieSBtZWFzdXJlZAogICAgICAgICMgYml0cmF0ZS9sYXRlbmN5IG9uIDIwMjYtMTEtMTQ7IHRoZSBFU1BOIHRyaW8gaXMgNzIwcCDigJQgdGhlCiAgICAgICAgIyBiZXN0IHRoYXQgZXhpc3RzIGZvciB0aG9zZSBjaGFubmVscyDigJQgYW5kIGNsb3NlcyB0aGUgYmxvY2suCiAgICAgICAgKCJFTiDCtyBDQlMgU3BvcnRzIEdvbGF6byIsIFNUQVRJQ1siZ29sYXpvIl0pLAogICAgICAgICgiRU4gwrcgRm94IFNwb3J0cyAxIiwgU1RBVElDWyJmczEiXSksCiAgICAgICAgKCJFTiDCtyBGT1ggU3BvcnRzIiwgZHluYW1pYyhYVU1PX0xJU1QsIGxhbWJkYSB0OiB0ID09ICJGT1ggU3BvcnRzIiwgImZveCIpKSwKICAgICAgICAoIkVOIMK3IEZ1Ym8gU3BvcnRzIiwgZHluYW1pYyhYVU1PX0xJU1QsIGxhbWJkYSB0OiB0ID09ICJGdWJvIFNwb3J0cyBOZXR3b3JrIiwgImZ1Ym8iKSksCiAgICAgICAgKCJFTiDCtyBTdGFkaXVtIiwgZHluYW1pYyhVU0xHX0xJU1QsIGxhbWJkYSB0OiAiU3RhZGl1bSIgaW4gdCwgInN0YWRpdW0iKSksCiAgICAgICAgKCJFTiDCtyBOQkMgU3BvcnRzIE5PVyIsIGR5bmFtaWMoWFVNT19MSVNULCBsYW1iZGEgdDogdCA9PSAiTkJDIFNwb3J0cyBOT1ciLCAibmJjIikpLAogICAgICAgICgiRU4gwrcgYmVJTiBTUE9SVFMgWFRSQSIsIFNUQVRJQ1siYmVpbl94dHJhIl0pLAogICAgICAgICgiRU4gwrcgRklGQSsiLCBkeW5hbWljKFZJWklPX0xJU1QsIGxhbWJkYSB0OiB0ID09ICJGSUZBKyIsICJmaWZhIikpLAogICAgICAgICgiRU4gwrcgRVNQTiIsIFNUQVRJQ1siZXNwbiJdKSwKICAgICAgICAoIkVOIMK3IEVTUE4gMiIsIFNUQVRJQ1siZXNwbjIiXSksCiAgICAgICAgKCJFTiDCtyBFU1BOVSIsIFNUQVRJQ1siZXNwbnUiXSksCiAgICBdCiAgICBvdXQgPSBbXQogICAgZm9yIG5hbWUsIHVybCBpbiBlbnRyaWVzOgogICAgICAgIGlmIHVybCBhbmQgaGVhbHRoeSh1cmwpOgogICAgICAgICAgICBvdXQuYXBwZW5kKGYnI0VYVElORjotMSBncm91cC10aXRsZT0ie0dST1VQfSIse25hbWV9JykKICAgICAgICAgICAgb3V0LmFwcGVuZCh1cmwpCiAgICAgICAgZWxzZToKICAgICAgICAgICAgcHJpbnQoZiJbZW5dIGRyb3BwZWQgKGhlYWx0aCBjaGVjayk6IHtuYW1lfSIsIGZpbGU9c3lzLnN0ZGVycikKICAgIHN5cy5zdGRvdXQud3JpdGUoIlxuIi5qb2luKG91dCkgKyAoIlxuIiBpZiBvdXQgZWxzZSAiIikpCiAgICBwcmludChmIltlbl0gZW1pdHRlZCB7bGVuKG91dCkgLy8gMn0gZW50cmllcyIsIGZpbGU9c3lzLnN0ZGVycikKCgppZiBfX25hbWVfXyA9PSAiX19tYWluX18iOgogICAgbWFpbigpCg==
+#!/usr/bin/env python3
+"""English-commentary backup block for the dabanh playlist mirror.
+
+Emits M3U entries (stdout) for a curated set of English-language sports
+channels, group "EN · BLV Anh", meant to be appended AFTER the whole
+Vietnamese list in tttt.m3u. Selection (owner, 2026-11-14): best measured
+image quality first (true 1080p where it exists), then lowest latency;
+the block stands on several independent upstreams so one dead upstream
+only costs its own channels.
+
+Dynamic URLs (Xumo via the BuddyChewChew generator, Wurl via apsattv)
+carry session ad parameters, so they are re-pulled from the freshest
+generator lists on every run; the constants below are the last verified
+snapshot (2026-11-14, sample-played end to end from a US IP) used only
+when a fresh pull fails. Static URLs (Amagi, Google DAI, the ESPN panel)
+have no session parameters. Every emitted URL is health-checked
+(master playlist must answer 200 and look like HLS); dead entries are
+dropped for that run. Any failure anywhere yields fewer entries, never
+an error: this script must never block the mirror.
+"""
+import sys
+import urllib.request
+
+UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+      "(KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36")
+GROUP = "EN · BLV Anh"
+
+XUMO_LIST = ("https://raw.githubusercontent.com/BuddyChewChew/"
+             "xumo-playlist-generator/refs/heads/main/playlists/"
+             "xumo_playlist.m3u")
+USLG_LIST = "https://www.apsattv.com/uslg.m3u"
+VIZIO_LIST = "https://www.apsattv.com/vizio.m3u"
+
+# Last verified snapshot, 2026-11-14 (fallbacks only).
+FALLBACK = {
+    "fox": "https://dbrb49pjoymg4.cloudfront.net/10001/99991196/hls/xumo.m3u8?ads.xumo_channelId=99991196&ads._fw_ifa_type=&ads._fw_did=491daae8-ab31-4543-aacc-da1e096f02f2&ads.amznappId=&ads.lat=&ads.lon=&ads.os=&ads.osv=&ads.asnw=&ads.caid=FoxSports&ads.csid=xumo_web_FoxSports_ssai&ads._fw_is_lat=0&ads._fw_us_privacy=&ads._fw_coppa=0&ads.genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_category=&ads._fw_content_language=en&ads._fw_content_genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_rating=&ads.xumo_contentId=142&ads.xumo_contentName=FoxSports&ads.xumo_providerId=142&ads.xumo_providerName=FoxSports&ads._fw_deviceMake=GitHubAction&ads._fw_device_model=PythonScript&ads.channelId=99991196&ads.xumo_platform=web&ads.site_id=&ads.appName=xumo&ads.appVersion=1.0.0&ads._fw_app_bundle=web.xumo.com&ads._fw_app_store_url=",
+    "fubo": "https://dbrb49pjoymg4.cloudfront.net/10001/99951548/hls/master.m3u8?includeAssetTags=true&ads.xumo_channelId=99951548&ads.xumo_streamId=99951548&ads.channelId=99951548&ads.channelName=FuboTV&ads.caid=FuboTV&ads.csid=xumo_web_FuboTV_ssai&ads.genre=Sport,Sports,SC,SE,SN,IAB17&ads._fw_content_genre=Sport,Sports,SC,SE,SN,IAB17&ads._fw_coppa=0.0&ads.xumo_contentId=1046&ads.xumo_contentName=FuboTV&ads.xumo_providerId=1046&ads.xumo_providerName=FuboTV&ads.asnw=&ads.xumo_channelName=FuboTV&ads._fw_h_x_country=US&ads._fw_ifa_type=&ads._fw_did=2ee040b1-d415-4c85-b069-6e8700e6b00e&ads.amznappId=&ads.lat=&ads.lon=&ads.os=&ads.osv=&ads._fw_is_lat=0&ads._fw_us_privacy=&ads._fw_content_category=&ads._fw_content_language=en&ads._fw_content_rating=&ads._fw_deviceMake=GitHubAction&ads._fw_device_model=PythonScript&ads.xumo_platform=web&ads.site_id=&ads.appVersion=1.0.0&ads._fw_app_bundle=web.xumo.com&ads._fw_app_store_url=&ads.appName=xumo",
+    "nbc": "https://d4whmvwm0rdvi.cloudfront.net/10007/99951253/hls/master.m3u8?includeAssetTags=true&ads.xumo_channelId=99951253&ads.xumo_streamId=99951253&ads.channelId=99951253&ads.asnw=169843&ads.afid=380753925&ads.sfid=19208128&ads.csid=xumo_web_NBCUSports_ssai_cro&ads._fw_coppa=0&ads.xumo_contentId=3929&ads.xumo_contentName=NBCUSports&ads.xumo_providerId=3929&ads.xumo_providerName=NBCUSports&ads.caid=&ads._fw_is_lat=0&ads._fw_us_privacy=&ads._fw_did=38298231-7ef3-4fd8-8ef7-24e527987b28&ads._fw_vcid2=512116:38298231-7ef3-4fd8-8ef7-24e527987b28&ads._fw_app_bundle=&ads._fw_app_store_url=&ads._fw_deviceMake=&ads._fw_device_model=&ads._fw_deviceType=3-Connected_TV&ads.appVersion=1.0.0&ads._fw_ifa_type=&ads.appName=XumoPlay&ads._fw_content_category=&ads._fw_content_genre=&ads._fw_content_language=en&ads._fw_content_rating=",
+    "stadium": "https://wurl120sports.global.transmit.live/hls/6863f426233e6604b8b45832/v1/stadium_gracenote/lg_us/latest/main/hls/playlist.m3u8?wurl_channel=160&wurl_name=Stadium&coppa=0&uid=[DEVICE_ID]&rdid=[IFA]&ifatype=[IFA_TYPE]&dnt=[LMT]&donotsell=[DNS]&isgdpr=[GDPR]&gdpr=[GDPR_CONSENT]&country=[COUNTRY]&pr=[US_PRIVACY]&appstoreurl=[APP_STOREURL]&bundleid=[APP_BUNDLE]&appname=[APP_NAME]&appversion=[APP_VERSION]&dt=[DEVICE_TYPE]&make=[DEVICE_MAKE]&model=[DEVICE_MODEL]&targetad=[TARGETAD_ALLOWED]&fck=[FCK]&viewsize=[VIEWSIZE]&nonce=[NONCE]",
+    "fifa": "https://95cedebd.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/Vml6aW9fRklGQVBsdXNFbmdsaXNoX0hMUw/playlist.m3u8?ads.wurl_channel=1854&ads.wurl_name=FIFAPlusEnglish&ads.coppa=0&ads.psid=%7bADID%7d&ads.targetopt=%7bTARGETOPT%7d&ads.us_privacy=%7bUSPRIVACY%7d&ads.ifa_type=%7bIFATYPE%7d&ads.lmt=%7bLMT%7d&ads.app_bundle=%7bAPP_BUNDLE%7d&ads.app_name=%7bAPP_NAME%7d&ads.app_store_url=%7bAPP_STORE_URL%7d&ads.url=%7bDOMAIN%7d&ads.w=%7bWIDTH%7d&ads.h=%7bHEIGHT%7d&ads.device_make=%7bDEVICE_MAKE%7d&ads.vizdartoken=eyJhdWQiOiI5OCIsIndmcGNpZCI6NDU0NzkyNzc3MH0",
+}
+
+STATIC = {
+    "golazo": ("https://dai.google.com/linear/hls/event/"
+               "7f3Wv6f7QEKfQna22jHqLQ/master.m3u8"),
+    "bein_xtra": "https://bein-xtra-bein.amagi.tv/playlist.m3u8",
+    "fs1": "http://85.237.89.160:9590/usa-s/FOX-SPORTS-1/index.m3u8",
+    "espn": "http://85.237.89.160:9590/usa-s/ESPN-HD/index.m3u8",
+    "espn2": "http://85.237.89.160:9590/usa-s/ESPN-2-HD/index.m3u8",
+    "espnu": "http://85.237.89.160:9590/usa-s/ESPN-U-HD/index.m3u8",
+}
+
+
+def fetch(url, timeout=30):
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.read().decode("utf-8", "replace")
+
+
+def extract(list_text, match):
+    """URL following the #EXTINF whose title satisfies match(title)."""
+    lines = list_text.splitlines()
+    for i, line in enumerate(lines):
+        if line.startswith("#EXTINF"):
+            title = line.split(",", 1)[-1].strip()
+            if match(title) and i + 1 < len(lines):
+                return lines[i + 1].strip()
+    return None
+
+
+def healthy(url):
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=15) as r:
+            head = r.read(512).decode("utf-8", "replace")
+            return r.status == 200 and "#EXTM3U" in head
+    except Exception:
+        return False
+
+
+def dynamic(list_url, match, key):
+    try:
+        url = extract(fetch(list_url), match)
+        if url:
+            return url
+    except Exception as exc:
+        print(f"[en] {key}: fresh pull failed: {exc}", file=sys.stderr)
+    return FALLBACK[key]
+
+
+def main():
+    entries = [
+        # 1080p group first (quality priority), ordered by measured
+        # bitrate/latency on 2026-11-14; the ESPN trio is 720p — the
+        # best that exists for those channels — and closes the block.
+        ("EN · CBS Sports Golazo", STATIC["golazo"]),
+        ("EN · Fox Sports 1", STATIC["fs1"]),
+        ("EN · FOX Sports", dynamic(XUMO_LIST, lambda t: t == "FOX Sports", "fox")),
+        ("EN · Fubo Sports", dynamic(XUMO_LIST, lambda t: t == "Fubo Sports Network", "fubo")),
+        ("EN · Stadium", dynamic(USLG_LIST, lambda t: "Stadium" in t, "stadium")),
+        ("EN · NBC Sports NOW", dynamic(XUMO_LIST, lambda t: t == "NBC Sports NOW", "nbc")),
+        ("EN · beIN SPORTS XTRA", STATIC["bein_xtra"]),
+        ("EN · FIFA+", dynamic(VIZIO_LIST, lambda t: t == "FIFA+", "fifa")),
+        ("EN · ESPN", STATIC["espn"]),
+        ("EN · ESPN 2", STATIC["espn2"]),
+        ("EN · ESPNU", STATIC["espnu"]),
+    ]
+    out = []
+    for name, url in entries:
+        if url and healthy(url):
+            out.append(f'#EXTINF:-1 group-title="{GROUP}",{name}')
+            out.append(url)
+        else:
+            print(f"[en] dropped (health check): {name}", file=sys.stderr)
+    sys.stdout.write("\n".join(out) + ("\n" if out else ""))
+    print(f"[en] emitted {len(out) // 2} entries", file=sys.stderr)
+
+
+if __name__ == "__main__":
+    main()
