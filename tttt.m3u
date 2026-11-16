@@ -1,24 +1,24 @@
 #EXTM3U
-#EXTINF:-1 group-title="Updated 16/11 19:37", Updated 16/11 19:37
+#EXTINF:-1 group-title="Updated 16/11 19:52", Updated 16/11 19:52
 https://freem3u.xyz/static/no-signal/low.m3u8
  
  
 #EXTM3U
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/a23156abfd4a114c35b930b836064e8b.png" group-title="Vua Sân Cỏ TV" , 🟡 20:00 16/11 ⚽ Sudan vs Senegal (Lê Hoàn) 
-https://wncdnhls-global.losartang.org/live/vsc-channel-5.m3u8
-
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/247c0a953f3a082b83443b3dfccedffb.png" group-title="Vua Sân Cỏ TV" , 🟡 20:00 16/11 ⚽ Namibia vs Cameroon (Nguyễn Nhạc) 
-https://wncdnhls-global.losartang.org/live/vsc-channel-13.m3u8
-
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/85040c47172a95869f1a82c180ae7701.png" group-title="Vua Sân Cỏ TV" , 🟡 20:00 16/11 ⚽ Zimbabwe vs Equatorial Guinea (Huyền Diệp) 
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/85040c47172a95869f1a82c180ae7701.png" group-title="Vua Sân Cỏ TV" , 🟢 20:00 16/11 ⚽ Zimbabwe vs Equatorial Guinea (Huyền Diệp) 
 https://wncdnhls-global.losartang.org/live/vsc-channel-4.m3u8
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/27ab2e099af3df31bb3a67cece587ffe.png" group-title="Vua Sân Cỏ TV" , 22:00 16/11 ⚽ Somalia vs Ghana (Nguyễn Ánh) 
-https://wncdnhls-global.losartang.org/live/vsc-channel-11.m3u8
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/a23156abfd4a114c35b930b836064e8b.png" group-title="Vua Sân Cỏ TV" , 🟢 20:00 16/11 ⚽ Sudan vs Senegal (Lê Hoàn) 
+https://wncdnhls-global.losartang.org/live/vsc-channel-5.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/247c0a953f3a082b83443b3dfccedffb.png" group-title="Vua Sân Cỏ TV" , 🟢 20:00 16/11 ⚽ Namibia vs Cameroon (Nguyễn Nhạc) 
+https://wncdnhls-global.losartang.org/live/vsc-channel-13.m3u8
 
 #EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/90c34175923a36ab7a5de4b981c1972f.png" group-title="Vua Sân Cỏ TV" , 22:00 16/11 ⚽ Faroe Islands vs Moldova (Dương Kiên) 
 https://wncdnhls-global.losartang.org/live/vsc-channel-3.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/27ab2e099af3df31bb3a67cece587ffe.png" group-title="Vua Sân Cỏ TV" , 22:00 16/11 ⚽ Somalia vs Ghana (Nguyễn Ánh) 
+https://wncdnhls-global.losartang.org/live/vsc-channel-11.m3u8
 
 #EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/0b01c7d68feb22290f3b0da91bef689d.png" group-title="Vua Sân Cỏ TV" , 22:00 16/11 ⚽ Kazakhstan vs Slovakia (Lê Lợi) 
 https://wncdnhls-global.losartang.org/live/vsc-channel-6.m3u8
@@ -29,6 +29,18 @@ https://wncdnhls-global.losartang.org/live/vsc-channel-19.m3u8
  
  
 #EXTM3U
+
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/615_namibia.jpg" group-title="Khô Gà TV" , 🟢 20:00 16/11 ⚽ Namibia vs Cameroon (BLV Khô Chè) [hls] 
+#EXTVLCOPT:http-referrer=https://khoga1.live/
+https://livecdn321.cdnfastter.xyz/live/live_a7657aeb05/index.m3u8?token=JhV-r8e3ccnFy-WcOqY4LotVZyi-effj_AKbg9uCVjU&expires=1852800615
+
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/629_sudan.jpg" group-title="Khô Gà TV" , 🟢 20:00 16/11 ⚽ Sudan vs Senegal (BLV Xôi Gấc) [hls] 
+#EXTVLCOPT:http-referrer=https://khoga1.live/
+https://livecdn321.cdnfastter.xyz/live/live_5e3f2549e4/index.m3u8?token=pCk_XLBJTDboKaC3LME17XPjU4pgaPXEOkc_CroCj0U&expires=1852800615
+
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/629_sudan.jpg" group-title="Khô Gà TV" , 🟢 20:00 16/11 ⚽ Sudan vs Senegal (BLV Xôi Gấc) [flv] 
+#EXTVLCOPT:http-referrer=https://khoga1.live/
+https://live.khoga.space/live/livehub11.flv
 
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/102_manchester-united.jpg" group-title="Khô Gà TV" , 🟢 21:00 25/10 ⚽ Manchester Utd vs Bournemouth (BLV Khô Cay) [hls] 
 #EXTVLCOPT:http-referrer=https://khoga1.live/
@@ -41,18 +53,6 @@ rtmp://rtmp.cdnfastter.xyz/live/live_753c90457f?expire=1852800615&sign=2490e3636
 #EXTINF:-1 tvg-logo="/media/matches/ballon_dor_2024.jpg" group-title="Khô Gà TV" , 🟢 02:00 27/10 ⚽ Lễ Trao Giải vs Quả Bóng Vàng 2026 (BLV Tam Mao) [hls] 
 #EXTVLCOPT:http-referrer=https://khoga1.live/
 https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
-
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/615_namibia.jpg" group-title="Khô Gà TV" , 🟢 20:00 16/11 ⚽ Namibia vs Cameroon (BLV Khô Chè) [hls] 
-#EXTVLCOPT:http-referrer=https://khoga1.live/
-https://livecdn321.cdnfastter.xyz/live/live_a7657aeb05/index.m3u8?token=JhV-r8e3ccnFy-WcOqY4LotVZyi-effj_AKbg9uCVjU&expires=1852800615
-
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/629_sudan.jpg" group-title="Khô Gà TV" , 🟡 20:00 16/11 ⚽ Sudan vs Senegal (BLV Xôi Gấc) [hls] 
-#EXTVLCOPT:http-referrer=https://khoga1.live/
-https://livecdn321.cdnfastter.xyz/live/live_5e3f2549e4/index.m3u8?token=pCk_XLBJTDboKaC3LME17XPjU4pgaPXEOkc_CroCj0U&expires=1852800615
-
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/629_sudan.jpg" group-title="Khô Gà TV" , 🟡 20:00 16/11 ⚽ Sudan vs Senegal (BLV Xôi Gấc) [flv] 
-#EXTVLCOPT:http-referrer=https://khoga1.live/
-https://live.khoga.space/live/livehub11.flv
 
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/630_somalia.jpg" group-title="Khô Gà TV" , 22:00 16/11 ⚽ Somalia vs Ghana (BLV Khô Mật) [hls] 
 #EXTVLCOPT:http-referrer=https://khoga1.live/
@@ -122,15 +122,15 @@ https://live.khoga.space/live/livehub11.flv
 #EXTVLCOPT:http-referrer=https://live.chuoichien.tv/
 https://gckc0525.edgemaxcdn.org/live/chuoigiahd/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_134303_b3f7dbb4.png" group-title="Chuối Chiên TV" , 🟡 20:00 16/11 ⚽ Namibia vs Cameroon (Chuối Lửa) [FHD] [hls] 
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_134303_b3f7dbb4.png" group-title="Chuối Chiên TV" , 🟢 20:00 16/11 ⚽ Namibia vs Cameroon (Chuối Lửa) [FHD] [hls] 
 #EXTVLCOPT:http-referrer=https://live.chuoichien.tv/
 https://gckc0525.edgemaxcdn.org/live/chuoiluahd/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_132801_2de225c1.png" group-title="Chuối Chiên TV" , 🟡 20:00 16/11 ⚽ Sudan vs Senegal (Trốc Tru) [FHD] [hls] 
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_132801_2de225c1.png" group-title="Chuối Chiên TV" , 🟢 20:00 16/11 ⚽ Sudan vs Senegal (Trốc Tru) [FHD] [hls] 
 #EXTVLCOPT:http-referrer=https://live.chuoichien.tv/
 https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_132803_57bcecf2.png" group-title="Chuối Chiên TV" , 🟡 20:00 16/11 ⚽ Zimbabwe vs Equatorial Guinea (Chuối Chao) [FHD] [hls] 
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_132803_57bcecf2.png" group-title="Chuối Chiên TV" , 🟢 20:00 16/11 ⚽ Zimbabwe vs Equatorial Guinea (Chuối Chao) [FHD] [hls] 
 #EXTVLCOPT:http-referrer=https://live.chuoichien.tv/
 https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8
 
@@ -269,6 +269,15 @@ https://freem3u.xyz/static/no-signal/low.m3u8
 #EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/43ebb4d6ad3ea5b68e9b1c969dff055b.png" group-title="Giờ Vàng TV" , 07:30 17/11 🏀 Miami Heat vs Houston Rockets (blv-leo) [hls]
 https://freem3u.xyz/static/no-signal/low.m3u8
 
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/canada.png" group-title="Giờ Vàng TV" , 08:00 17/11 ⚽ Canada vs Guatemala (blv-ty) [hls]
+https://freem3u.xyz/static/no-signal/low.m3u8
+
+#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/e97782502546bad80da0347446a3a311.png" group-title="Giờ Vàng TV" , 08:00 17/11 🏀 Minnesota Timberwolves vs Portland Trail Blazers (blv-ben) [hls]
+https://freem3u.xyz/static/no-signal/low.m3u8
+
+#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/b745bb8171bc1a860d480067c1bb9b8f.png" group-title="Giờ Vàng TV" , 08:00 17/11 🏀 New Orleans Pelicans vs Golden State Warriors (blvhau) [hls]
+https://freem3u.xyz/static/no-signal/low.m3u8
+
  
  
 #EXTM3U
@@ -349,17 +358,17 @@ https://hls.lauthaitv.cc/live/marko-zakyn-grel2/index.m3u8
 #EXTINF:-1 tvg-logo="https://s8tvkc.top/wp-json/s8-image/9a361f50-c848-4d63-a127-0643025173af" group-title="S8 TV" , 🟢 19:00 16/11 ⚽ Bor 1919 vs Semendrija 1924 (NGƯỜI BẠC) [flv]
 https://flv.lauthaitv.cc/live/marko-zakyn-grel2.flv
 
+#EXTINF:-1 tvg-logo="https://s8tvkc.top/wp-json/s8-image/8fa5701f-9f34-4d0f-b50e-ee6f9b456ec0" group-title="S8 TV" , 🟢 20:00 16/11 ⚽ Sudan vs Senegal (NGƯỜI RÂM) [hls]
+https://hls.lauthaitv.cc/live/sud-sen-cafafcon/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://s8tvkc.top/wp-json/s8-image/8fa5701f-9f34-4d0f-b50e-ee6f9b456ec0" group-title="S8 TV" , 🟢 20:00 16/11 ⚽ Sudan vs Senegal (NGƯỜI RÂM) [flv]
+https://flv.lauthaitv.cc/live/sud-sen-cafafcon.flv
+
 #EXTINF:-1 tvg-logo="https://s8tvkc.top/wp-json/s8-image/9f2b06e9-ee65-4f6d-b1d6-26b8639dbdf4" group-title="S8 TV" , 🟢 20:00 16/11 ⚽ Namibia vs Cameroon (NGƯỜI THỎ) [hls]
 https://hls.lauthaitv.cc/live/nami-came-cafafcon/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://s8tvkc.top/wp-json/s8-image/9f2b06e9-ee65-4f6d-b1d6-26b8639dbdf4" group-title="S8 TV" , 🟢 20:00 16/11 ⚽ Namibia vs Cameroon (NGƯỜI THỎ) [flv]
 https://flv.lauthaitv.cc/live/nami-came-cafafcon.flv
-
-#EXTINF:-1 tvg-logo="https://s8tvkc.top/wp-json/s8-image/8fa5701f-9f34-4d0f-b50e-ee6f9b456ec0" group-title="S8 TV" , 🟡 20:00 16/11 ⚽ Sudan vs Senegal (NGƯỜI RÂM) [hls]
-https://hls.lauthaitv.cc/live/sud-sen-cafafcon/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://s8tvkc.top/wp-json/s8-image/8fa5701f-9f34-4d0f-b50e-ee6f9b456ec0" group-title="S8 TV" , 🟡 20:00 16/11 ⚽ Sudan vs Senegal (NGƯỜI RÂM) [flv]
-https://flv.lauthaitv.cc/live/sud-sen-cafafcon.flv
 
 #EXTINF:-1 tvg-logo="https://s8tvkc.top/wp-json/s8-image/da9959de-98b8-4c94-aa0f-06a9060bfe6e" group-title="S8 TV" , 22:00 16/11 ⚽ Kazakhstan vs Slovakia (NGƯỜI CAT) [hls]
 https://hls.lauthaitv.cc/live/kaz-slo-uefanl/index.m3u8
@@ -447,11 +456,15 @@ https://flv.lauthaitv.cc/live/can-gua-concacaf.flv
 #EXTVLCOPT:http-referrer=https://sk.mediastation.live/
 https://wtyi0525.edgemaxcdn.org/live/x00-hd-1111/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://images.fotmob.com/image_resources/logo/teamlogo/5802.png" group-title="Sao Kê TV" , 🟡 20:00 16/11 ⚽ Namibia vs Cameroon (Bút Chì) [hls]
+#EXTINF:-1 tvg-logo="https://images.fotmob.com/image_resources/logo/teamlogo/6290.png" group-title="Sao Kê TV" , 🟢 20:00 16/11 ⚽ Zimbabwe vs Equatorial Guinea (Nếp Cẩm) [hls]
+#EXTVLCOPT:http-referrer=https://sk.mediastation.live/
+https://wtyi0525.edgemaxcdn.org/live/x4-hd-1111/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://images.fotmob.com/image_resources/logo/teamlogo/5802.png" group-title="Sao Kê TV" , 🟢 20:00 16/11 ⚽ Namibia vs Cameroon (Bút Chì) [hls]
 #EXTVLCOPT:http-referrer=https://sk.mediastation.live/
 https://wtyi0525.edgemaxcdn.org/live/x22-hd-1111/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://images.fotmob.com/image_resources/logo/teamlogo/5805.png" group-title="Sao Kê TV" , 🟡 20:00 16/11 ⚽ Sudan vs Senegal (Ricky) [hls]
+#EXTINF:-1 tvg-logo="https://images.fotmob.com/image_resources/logo/teamlogo/5805.png" group-title="Sao Kê TV" , 🟢 20:00 16/11 ⚽ Sudan vs Senegal (Ricky) [hls]
 #EXTVLCOPT:http-referrer=https://sk.mediastation.live/
 https://wtyi0525.edgemaxcdn.org/live/x83-hd-1111/playlist.m3u8
 
@@ -515,6 +528,46 @@ https://wtyi0525.edgemaxcdn.org/live/x2-hd-1111/playlist.m3u8
  
 #EXTM3U
 
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nh0l4omd7o/image/small" group-title="Xôi Lạc Z TV" , 🟢 20:00 16/11 ⚽ Namibia vs Cameroon (ZANE) 
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
+https://live2.jorvakstreamcache.com/live/channel22.flv
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nh0l4omd7o/image/small" group-title="Xôi Lạc Z TV" , 🟢 20:00 16/11 ⚽ Namibia vs Cameroon (HD ZANE) 
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
+https://live2.domaincdn.cc/livecdn/channel-22.flv?auth_key=3000001794833433-0-0-622061d43a3173c61b40725bdf7d4c59
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyh73wer1ge/image/small" group-title="Xôi Lạc Z TV" , 🟢 20:00 16/11 ⚽ Zimbabwe vs Guinea Xích Đạo (TONI) 
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
+https://live2.jorvakstreamcache.com/live/channel9.flv
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyh73wer1ge/image/small" group-title="Xôi Lạc Z TV" , 🟢 20:00 16/11 ⚽ Zimbabwe vs Guinea Xích Đạo (HD TONI) 
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
+https://live2.domaincdn.cc/livecdn/channel-9.flv?auth_key=3000001794833442-0-0-0ef3471d47d1e7fb61fa7f3bf3307b74
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phy96m2wd/image/small" group-title="Xôi Lạc Z TV" , 🟢 20:00 16/11 ⚽ Sudan vs Senegal (NEMO) 
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
+https://live2.jorvakstreamcache.com/live/channel17.flv
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phy96m2wd/image/small" group-title="Xôi Lạc Z TV" , 🟢 20:00 16/11 ⚽ Sudan vs Senegal (HD NEMO) 
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
+https://live2.domaincdn.cc/livecdn/channel-17.flv?auth_key=3000001794833450-0-0-a9916d633dab0d3043ed2b9b8d283646
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/y0or5ofgwx8mwzv/image/small" group-title="Xôi Lạc Z TV" , 🟢 20:00 16/11 🥎 Carlos Alcaraz Garfia vs Frances Tiafoe (VIC) 
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
+https://live2.jorvakstreamcache.com/live/channel32.flv
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/y0or5ofgwx8mwzv/image/small" group-title="Xôi Lạc Z TV" , 🟢 20:00 16/11 🥎 Carlos Alcaraz Garfia vs Frances Tiafoe (HD VIC) 
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
+https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001794833458-0-0-64d2806c8df23d07ba8534fe71c1972f
+
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phpzl8m2wd/image/small" group-title="Xôi Lạc Z TV" , 🟢 17:25 16/11 ⚽ FC United Stars vs South United (JEAN) 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
@@ -523,7 +576,7 @@ https://live2.jorvakstreamcache.com/live/channel7.flv
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phpzl8m2wd/image/small" group-title="Xôi Lạc Z TV" , 🟢 17:25 16/11 ⚽ FC United Stars vs South United (HD JEAN) 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-7.flv?auth_key=3000001794832529-0-0-155636579eee34d94425724f872e9086
+https://live2.domaincdn.cc/livecdn/channel-7.flv?auth_key=3000001794833464-0-0-aefd37e5ade91a4bc3aebfbea7b04cf9
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jhl7kpqwzv/image/small" group-title="Xôi Lạc Z TV" , 🟢 18:00 16/11 ⚽ Nữ Tây Ban Nha U17 vs Nữ Thụy Sĩ U17 (BEE) 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -533,7 +586,7 @@ https://live2.jorvakstreamcache.com/live/channel8.flv
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jhl7kpqwzv/image/small" group-title="Xôi Lạc Z TV" , 🟢 18:00 16/11 ⚽ Nữ Tây Ban Nha U17 vs Nữ Thụy Sĩ U17 (HD BEE) 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-8.flv?auth_key=3000001794832554-0-0-447a5aa71c3b5c6891ff2450d815f20e
+https://live2.domaincdn.cc/livecdn/channel-8.flv?auth_key=3000001794833472-0-0-f63afa7690d2337bbba112225c8adaff
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/2y8m4zhg3nlql07/image/small" group-title="Xôi Lạc Z TV" , 🟢 19:00 16/11 ⚽ FK Graficar Beograd vs Vozdovac Beograd (OLER) 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -543,7 +596,7 @@ https://live2.jorvakstreamcache.com/live/channel28.flv
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/2y8m4zhg3nlql07/image/small" group-title="Xôi Lạc Z TV" , 🟢 19:00 16/11 ⚽ FK Graficar Beograd vs Vozdovac Beograd (HD OLER) 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-28.flv?auth_key=3000001794832559-0-0-fa30b82234bc8e8fe20ae897544eafb5
+https://live2.domaincdn.cc/livecdn/channel-28.flv?auth_key=3000001794833479-0-0-9c2bde15c61a1f952dfa0b7c387de3a3
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/k82rekh1kx4repz/image/small" group-title="Xôi Lạc Z TV" , 🟢 19:00 16/11 ⚽ Bor 1919 vs Semendrija 1924 (SILVA) 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -553,7 +606,7 @@ https://live2.jorvakstreamcache.com/live/channel20.flv
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/k82rekh1kx4repz/image/small" group-title="Xôi Lạc Z TV" , 🟢 19:00 16/11 ⚽ Bor 1919 vs Semendrija 1924 (HD SILVA) 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-20.flv?auth_key=3000001794832568-0-0-510d779249d55a42037f081806578d73
+https://live2.domaincdn.cc/livecdn/channel-20.flv?auth_key=3000001794833486-0-0-bbaa14251154e7bfa499d484535fbe29
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/basketball/team/yl5ergyt9p9r8k0/image/small" group-title="Xôi Lạc Z TV" , 🟢 17:35 16/11 🏀 Ryukyu Golden Kings vs Toyama Grouses (KOBE) 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -563,7 +616,7 @@ https://live2.jorvakstreamcache.com/live/channel27.flv
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/basketball/team/yl5ergyt9p9r8k0/image/small" group-title="Xôi Lạc Z TV" , 🟢 17:35 16/11 🏀 Ryukyu Golden Kings vs Toyama Grouses (HD KOBE) 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-27.flv?auth_key=3000001794832573-0-0-f6b4f1e4f4601b3018d92204a128beb3
+https://live2.domaincdn.cc/livecdn/channel-27.flv?auth_key=3000001794833491-0-0-914191e173fe3a0908d8570cc582938a
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/basketball/team/9vjxm8xtoogq6od/image/small" group-title="Xôi Lạc Z TV" , 🟢 18:30 16/11 🏀 Nữ Jiansu Nangang vs Nữ Hebei Hengshuihu (ALAN) 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -573,57 +626,17 @@ https://live2.jorvakstreamcache.com/live/channel25.flv
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/basketball/team/9vjxm8xtoogq6od/image/small" group-title="Xôi Lạc Z TV" , 🟢 18:30 16/11 🏀 Nữ Jiansu Nangang vs Nữ Hebei Hengshuihu (HD ALAN) 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-25.flv?auth_key=3000001794832581-0-0-c34a8d67d2efe252d0b493e38d763162
-
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nh0l4omd7o/image/small" group-title="Xôi Lạc Z TV" , 🟡 20:00 16/11 ⚽ Namibia vs Cameroon (ZANE) 
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
-https://live2.jorvakstreamcache.com/live/channel22.flv
-
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nh0l4omd7o/image/small" group-title="Xôi Lạc Z TV" , 🟡 20:00 16/11 ⚽ Namibia vs Cameroon (HD ZANE) 
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-22.flv?auth_key=3000001794832587-0-0-ad0051eaf424e81dcf10becff78e9c6c
-
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyh73wer1ge/image/small" group-title="Xôi Lạc Z TV" , 🟡 20:00 16/11 ⚽ Zimbabwe vs Guinea Xích Đạo (TONI) 
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
-https://live2.jorvakstreamcache.com/live/channel9.flv
-
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyh73wer1ge/image/small" group-title="Xôi Lạc Z TV" , 🟡 20:00 16/11 ⚽ Zimbabwe vs Guinea Xích Đạo (HD TONI) 
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-9.flv?auth_key=3000001794832593-0-0-992b15bcf1a948b207350deab082c2d2
-
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phy96m2wd/image/small" group-title="Xôi Lạc Z TV" , 🟡 20:00 16/11 ⚽ Sudan vs Senegal (NEMO) 
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
-https://live2.jorvakstreamcache.com/live/channel17.flv
-
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phy96m2wd/image/small" group-title="Xôi Lạc Z TV" , 🟡 20:00 16/11 ⚽ Sudan vs Senegal (HD NEMO) 
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-17.flv?auth_key=3000001794832598-0-0-dcfff2497eb45d5fd42163c61a3d0ffa
-
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/y0or5ofgwx8mwzv/image/small" group-title="Xôi Lạc Z TV" , 🟡 20:00 16/11 🥎 Carlos Alcaraz Garfia vs Frances Tiafoe (VIC) 
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
-https://live2.jorvakstreamcache.com/live/channel32.flv
-
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/tennis/team/y0or5ofgwx8mwzv/image/small" group-title="Xôi Lạc Z TV" , 🟡 20:00 16/11 🥎 Carlos Alcaraz Garfia vs Frances Tiafoe (HD VIC) 
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001794832606-0-0-47e61e6f5493f8ccb49e4a472e620b84
+https://live2.domaincdn.cc/livecdn/channel-25.flv?auth_key=3000001794833496-0-0-c63561ede8a3505e6abbe5987b0d3b61
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/p3glrw7h2wnqdyj/image/small" group-title="Xôi Lạc Z TV" , 22:00 16/11 ⚽ Kazakhstan vs Slovakia (BRADY) 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel15.flv?wsSecret=ccc333e18ffe3e57b83c2707af263ac1&wsABSTime=1794875809
+https://live1.quickscoreboardz.com/live/channel15.flv?wsSecret=76ef42f3525a6d7435a50f87f95c96a5&wsABSTime=1794876700
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/p3glrw7h2wnqdyj/image/small" group-title="Xôi Lạc Z TV" , 22:00 16/11 ⚽ Kazakhstan vs Slovakia (FELIX) 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001794832612-0-0-a949634f843b55b67a0f832a0babb04d
+https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001794833502-0-0-0e6ae922f8d889c95512c6567d1a17ce
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/p3glrw7h2wnqdyj/image/small" group-title="Xôi Lạc Z TV" , 22:00 16/11 ⚽ Kazakhstan vs Slovakia (FELIX) 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -633,7 +646,7 @@ https://live2.jorvakstreamcache.com/live/channel24.flv
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/p3glrw7h2wnqdyj/image/small" group-title="Xôi Lạc Z TV" , 22:00 16/11 ⚽ Kazakhstan vs Slovakia (FULL HD BRADY) 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001794832616-0-0-e1cad14ebc71769c47fb74fbd046a6bb
+https://live2.domaincdn.cc/livecdn/channel-15.flv?auth_key=3000001794833508-0-0-75b53a109519280a9d709bbe241db66a
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/gy0or5jhd2oqwzv/image/small" group-title="Xôi Lạc Z TV" , 22:00 16/11 ⚽ Faroe Islands vs Moldova (FABIO) 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -643,17 +656,17 @@ https://live2.jorvakstreamcache.com/live/channel2.flv
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/gy0or5jhd2oqwzv/image/small" group-title="Xôi Lạc Z TV" , 22:00 16/11 ⚽ Faroe Islands vs Moldova (RIO) 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
-https://live1.quickscoreboardz.com/live/channel16.flv?wsSecret=8b9cf0ce50e2f50bdf0a9721707c225c&wsABSTime=1794875820
+https://live1.quickscoreboardz.com/live/channel16.flv?wsSecret=13e2b1a9fbdf441a0aef029b3ddecce9&wsABSTime=1794876715
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/gy0or5jhd2oqwzv/image/small" group-title="Xôi Lạc Z TV" , 22:00 16/11 ⚽ Faroe Islands vs Moldova (RIO) 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-116.flv?auth_key=3000001794832623-0-0-9ce8f3be8af79f7cfe4890159698a7a9
+https://live2.domaincdn.cc/livecdn/channel-116.flv?auth_key=3000001794833518-0-0-d1f12b17d9aca7c701a7a4a908563dbd
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/gy0or5jhd2oqwzv/image/small" group-title="Xôi Lạc Z TV" , 22:00 16/11 ⚽ Faroe Islands vs Moldova (FULL HD FABIO) 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001794832625-0-0-c7107b74b35626fd014696a7b095825a
+https://live2.domaincdn.cc/livecdn/channel-2.flv?auth_key=3000001794833519-0-0-0331b0613bd095deb5dfc3c6ae3f68c1
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/basketball/team/gx7lm73te74r2wd/image/small" group-title="Xôi Lạc Z TV" , 00:00 17/11 🏀 Nữ Na Uy vs Nữ Bosnia (KOBE) 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -723,7 +736,7 @@ https://live2.jorvakstreamcache.com/live/channel33.flv
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/volleyball/team/4wyrn3hn6nkm86p/image/small" group-title="Xôi Lạc Z TV" , 23:30 16/11 🏐 Nữ Mogilno vs Nữ Bydgoszcz (HD TYSON) 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.domainkqt.cc/
-https://live2.domaincdn.cc/livecdn/channel-33.flv?auth_key=3000001794832643-0-0-9044b54c2bb35bebc340957d74d459b4
+https://live2.domaincdn.cc/livecdn/channel-33.flv?auth_key=3000001794833536-0-0-6e7ea6127a99ad44712e06863ca3f178
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/volleyball/team/9k82redh51eqepz/image/small" group-title="Xôi Lạc Z TV" , 17:00 17/11 🏐 Nữ IBK vs Nữ Daejeon KGC (TYSON) 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -759,6 +772,24 @@ https://live2.pro2cdnlive.com/live/channel-33.flv
  
 #EXTM3U
 
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/247c0a953f3a082b83443b3dfccedffb.png" group-title="Gà Vàng 33 TV" , 🟢 20:00 16/11 ⚽ Namibia vs Cameroon (Gà Siêu Quỷ) [flv]
+https://live2.zktsva.app/live/304565.flv
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/247c0a953f3a082b83443b3dfccedffb.png" group-title="Gà Vàng 33 TV" , 🟢 20:00 16/11 ⚽ Namibia vs Cameroon (Gà Siêu Quỷ) [hls]
+https://live2.zktsva.app/live/304565.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/a23156abfd4a114c35b930b836064e8b.png" group-title="Gà Vàng 33 TV" , 🟢 20:00 16/11 ⚽ Sudan vs Senegal (Gà Siêu Gáy) [flv]
+https://live2.zktsva.app/live/294335.flv
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/a23156abfd4a114c35b930b836064e8b.png" group-title="Gà Vàng 33 TV" , 🟢 20:00 16/11 ⚽ Sudan vs Senegal (Gà Siêu Gáy) [hls]
+https://live2.zktsva.app/live/294335.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/85040c47172a95869f1a82c180ae7701.png" group-title="Gà Vàng 33 TV" , 🟢 20:00 16/11 ⚽ Zimbabwe vs Equatorial Guinea (Gà Ô Long) [flv]
+https://live2.zktsva.app/live/432017.flv
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/85040c47172a95869f1a82c180ae7701.png" group-title="Gà Vàng 33 TV" , 🟢 20:00 16/11 ⚽ Zimbabwe vs Equatorial Guinea (Gà Ô Long) [hls]
+https://live2.zktsva.app/live/432017.m3u8
+
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/83f08380c7ca9df5cf05fe86f423ca34.png" group-title="Gà Vàng 33 TV" , 🟢 19:00 16/11 ⚽ Bor 1919 vs Semendrija 1924 (Gà Siêu Nhí) [flv]
 https://live2.zktsva.app/live/301263.flv
 
@@ -776,24 +807,6 @@ https://live2.zktsva.app/live/300523.flv
 
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/c0f3a9cc8c0672341632498cdfb3fff9.png" group-title="Gà Vàng 33 TV" , 🟢 20:00 16/11 ⚽ Algeria U17 vs Egypt U17 (Gà Siêu Mõm) [hls]
 https://live2.zktsva.app/live/300523.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/247c0a953f3a082b83443b3dfccedffb.png" group-title="Gà Vàng 33 TV" , 🟢 20:00 16/11 ⚽ Namibia vs Cameroon (Gà Siêu Phệ + Gà Siêu Quỷ) [flv]
-https://live2.zktsva.app/live/304565.flv
-
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/247c0a953f3a082b83443b3dfccedffb.png" group-title="Gà Vàng 33 TV" , 🟢 20:00 16/11 ⚽ Namibia vs Cameroon (Gà Siêu Phệ + Gà Siêu Quỷ) [hls]
-https://live2.zktsva.app/live/304565.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/a23156abfd4a114c35b930b836064e8b.png" group-title="Gà Vàng 33 TV" , 🟢 20:00 16/11 ⚽ Sudan vs Senegal (Gà Siêu Gáy) [flv]
-https://live2.zktsva.app/live/294335.flv
-
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/a23156abfd4a114c35b930b836064e8b.png" group-title="Gà Vàng 33 TV" , 🟢 20:00 16/11 ⚽ Sudan vs Senegal (Gà Siêu Gáy) [hls]
-https://live2.zktsva.app/live/294335.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/85040c47172a95869f1a82c180ae7701.png" group-title="Gà Vàng 33 TV" , 🟢 20:00 16/11 ⚽ Zimbabwe vs Equatorial Guinea (Gà Ô Long) [flv]
-https://live2.zktsva.app/live/432017.flv
-
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/85040c47172a95869f1a82c180ae7701.png" group-title="Gà Vàng 33 TV" , 🟢 20:00 16/11 ⚽ Zimbabwe vs Equatorial Guinea (Gà Ô Long) [hls]
-https://live2.zktsva.app/live/432017.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/7da9599ceaa0dd2498d02cc7985f5bde.png" group-title="Gà Vàng 33 TV" , 🟢 20:00 16/11 ⚽ Tunisia U17 vs Morocco U17 (Gà Siêu Tồ) [flv]
 https://live2.zktsva.app/live/796315.flv
@@ -897,10 +910,10 @@ https://live2.zktsva.app/live/301263.flv
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/275612d39c2aacdf7b64836df54b9229.png" group-title="Gà Vàng 33 TV" , 02:45 17/11 ⚽ Gibraltar vs Malta (Gà Siêu Nhí) [hls]
 https://live2.zktsva.app/live/301263.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/761ccf19be6a4fdf81880acadb81aa4c.png" group-title="Gà Vàng 33 TV" , 02:45 17/11 ⚽ Germany vs Netherlands (Gà Siêu Phệ + Gà Siêu Quỷ) [flv]
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/761ccf19be6a4fdf81880acadb81aa4c.png" group-title="Gà Vàng 33 TV" , 02:45 17/11 ⚽ Germany vs Netherlands (Gà Siêu Quỷ) [flv]
 https://live2.zktsva.app/live/304565.flv
 
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/761ccf19be6a4fdf81880acadb81aa4c.png" group-title="Gà Vàng 33 TV" , 02:45 17/11 ⚽ Germany vs Netherlands (Gà Siêu Phệ + Gà Siêu Quỷ) [hls]
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/761ccf19be6a4fdf81880acadb81aa4c.png" group-title="Gà Vàng 33 TV" , 02:45 17/11 ⚽ Germany vs Netherlands (Gà Siêu Quỷ) [hls]
 https://live2.zktsva.app/live/304565.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/1da38e9fc1f765ffa964a0ab64c8d8fe.png" group-title="Gà Vàng 33 TV" , 02:45 17/11 ⚽ Greece vs Serbia (Gà Siêu Péo) [flv]
@@ -939,9 +952,33 @@ https://live2.zktsva.app/live/796315.flv
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/edb8dfb5b878d0e33c4a86488ad8eb6a.png" group-title="Gà Vàng 33 TV" , 07:00 17/11 ⚽ Trinidad and Tobago vs Antigua and Barbuda (Gà Siêu Tồ) [hls]
 https://live2.zktsva.app/live/796315.m3u8
 
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/336e1c9ab6894a3b893c1ef45235a164.png" group-title="Gà Vàng 33 TV" , 08:00 17/11 ⚽ Canada vs Guatemala (Gà Siêu Son) [flv]
+https://live2.zktsva.app/live/306290.flv
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/336e1c9ab6894a3b893c1ef45235a164.png" group-title="Gà Vàng 33 TV" , 08:00 17/11 ⚽ Canada vs Guatemala (Gà Siêu Son) [hls]
+https://live2.zktsva.app/live/306290.m3u8
+
  
  
 #EXTM3U
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/a23156abfd4a114c35b930b836064e8b.png!w80" group-title="Cola TV" , 🟢 20:00 16/11 ⚽ Sudan vs Senegal (BLV REVIVE) [flv]
+https://live05.wecile.app/live/33982309.flv
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/a23156abfd4a114c35b930b836064e8b.png!w80" group-title="Cola TV" , 🟢 20:00 16/11 ⚽ Sudan vs Senegal (BLV REVIVE) [hls]
+https://live05.wecile.app/live/33982309.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/a23156abfd4a114c35b930b836064e8b.png!w80" group-title="Cola TV" , 🟢 20:00 16/11 ⚽ Sudan vs Senegal (BLV REVIVE) [hls 2]
+https://live05.yefpwmc.app/live/33982309_tsc.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/247c0a953f3a082b83443b3dfccedffb.png!w80" group-title="Cola TV" , 🟢 20:00 16/11 ⚽ Namibia vs Cameroon (BLV HỔ VẰN) [flv]
+https://live05.wecile.app/live/07428422.flv
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/247c0a953f3a082b83443b3dfccedffb.png!w80" group-title="Cola TV" , 🟢 20:00 16/11 ⚽ Namibia vs Cameroon (BLV HỔ VẰN) [hls]
+https://live05.wecile.app/live/07428422.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/247c0a953f3a082b83443b3dfccedffb.png!w80" group-title="Cola TV" , 🟢 20:00 16/11 ⚽ Namibia vs Cameroon (BLV HỔ VẰN) [hls 2]
+https://live05.yefpwmc.app/live/07428422_tsc.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/83f08380c7ca9df5cf05fe86f423ca34.png!w80" group-title="Cola TV" , 🟢 19:00 16/11 ⚽ Bor 1919 vs Semendria 1924 (BLV 7UP) [flv]
 https://live05.wecile.app/live/78905744.flv
@@ -979,15 +1016,6 @@ https://live05.wecile.app/live/87547578.m3u8
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/85040c47172a95869f1a82c180ae7701.png!w80" group-title="Cola TV" , 🟢 20:00 16/11 ⚽ Zimbabwe vs Guinea Xích đạo (BLV MOUNTAIN DEW) [hls 2]
 https://live05.yefpwmc.app/live/87547578_tsc.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/a23156abfd4a114c35b930b836064e8b.png!w80" group-title="Cola TV" , 🟢 20:00 16/11 ⚽ Sudan vs Senegal (BLV REVIVE) [flv]
-https://live05.wecile.app/live/33982309.flv
-
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/a23156abfd4a114c35b930b836064e8b.png!w80" group-title="Cola TV" , 🟢 20:00 16/11 ⚽ Sudan vs Senegal (BLV REVIVE) [hls]
-https://live05.wecile.app/live/33982309.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/a23156abfd4a114c35b930b836064e8b.png!w80" group-title="Cola TV" , 🟢 20:00 16/11 ⚽ Sudan vs Senegal (BLV REVIVE) [hls 2]
-https://live05.yefpwmc.app/live/33982309_tsc.m3u8
-
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/7da9599ceaa0dd2498d02cc7985f5bde.png!w80" group-title="Cola TV" , 🟢 20:00 16/11 ⚽ Tunisia U17 vs Ma Rốc U17 (BLV SODA) [flv]
 https://live05.wecile.app/live/02456966.flv
 
@@ -1005,15 +1033,6 @@ https://live05.wecile.app/live/18812304.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/c0f3a9cc8c0672341632498cdfb3fff9.png!w80" group-title="Cola TV" , 🟢 20:00 16/11 ⚽ Algeria U17 vs Ai Cập U17 (BLV AQUA) [hls 2]
 https://live05.yefpwmc.app/live/18812304_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/247c0a953f3a082b83443b3dfccedffb.png!w80" group-title="Cola TV" , 🟢 20:00 16/11 ⚽ Namibia vs Cameroon (BLV HỔ VẰN) [flv]
-https://live05.wecile.app/live/07428422.flv
-
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/247c0a953f3a082b83443b3dfccedffb.png!w80" group-title="Cola TV" , 🟢 20:00 16/11 ⚽ Namibia vs Cameroon (BLV HỔ VẰN) [hls]
-https://live05.wecile.app/live/07428422.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/247c0a953f3a082b83443b3dfccedffb.png!w80" group-title="Cola TV" , 🟢 20:00 16/11 ⚽ Namibia vs Cameroon (BLV HỔ VẰN) [hls 2]
-https://live05.yefpwmc.app/live/07428422_tsc.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/775bc655c77d679c193f1982dac04668.png!w80" group-title="Cola TV" , 21:00 16/11 ⚽ Ý U20 vs Thụy Sĩ U20 (BLV RỒNG ĐỎ) [flv]
 https://live05.wecile.app/live/88508431.flv
@@ -1285,73 +1304,36 @@ https://live05.wecile.app/live/87379114.m3u8
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/basketball/team/ff7ccef6a6b79c6417ee8367946b0aec.png!w80" group-title="Cola TV" , 07:30 17/11 🏀 Miami Heat vs Houston Rockets (BLV Cozy) [hls 2]
 https://live05.yefpwmc.app/live/87379114_tsc.m3u8
 
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/7e19999864bb17b5cf10e68e3c7e6276.png!w80" group-title="Cola TV" , 08:00 17/11 ⚽ Canada vs Guatemala (BLV PEPSI) [flv]
+https://live05.wecile.app/live/59444581.flv
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/7e19999864bb17b5cf10e68e3c7e6276.png!w80" group-title="Cola TV" , 08:00 17/11 ⚽ Canada vs Guatemala (BLV PEPSI) [hls]
+https://live05.wecile.app/live/59444581.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/7e19999864bb17b5cf10e68e3c7e6276.png!w80" group-title="Cola TV" , 08:00 17/11 ⚽ Canada vs Guatemala (BLV PEPSI) [hls 2]
+https://live05.yefpwmc.app/live/59444581_tsc.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/basketball/team/38794d0ac418d8f2d03bd17a2623f3ed.png!w80" group-title="Cola TV" , 08:00 17/11 🏀 Minnesota Timberwolves vs Portland Trail Blazers (BLV 247) [flv]
+https://live05.wecile.app/live/90865415.flv
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/basketball/team/38794d0ac418d8f2d03bd17a2623f3ed.png!w80" group-title="Cola TV" , 08:00 17/11 🏀 Minnesota Timberwolves vs Portland Trail Blazers (BLV 247) [hls]
+https://live05.wecile.app/live/90865415.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/basketball/team/38794d0ac418d8f2d03bd17a2623f3ed.png!w80" group-title="Cola TV" , 08:00 17/11 🏀 Minnesota Timberwolves vs Portland Trail Blazers (BLV 247) [hls 2]
+https://live05.yefpwmc.app/live/90865415_tsc.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/basketball/team/2602b893bb3f8d381a5b0d978fad74e1.png!w80" group-title="Cola TV" , 08:00 17/11 🏀 New Orleans Pelicans vs Golden State Warriors (BLV POCARI) [flv]
+https://live05.wecile.app/live/19919577.flv
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/basketball/team/2602b893bb3f8d381a5b0d978fad74e1.png!w80" group-title="Cola TV" , 08:00 17/11 🏀 New Orleans Pelicans vs Golden State Warriors (BLV POCARI) [hls]
+https://live05.wecile.app/live/19919577.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/basketball/team/2602b893bb3f8d381a5b0d978fad74e1.png!w80" group-title="Cola TV" , 08:00 17/11 🏀 New Orleans Pelicans vs Golden State Warriors (BLV POCARI) [hls 2]
+https://live05.yefpwmc.app/live/19919577_tsc.m3u8
+
  
  
 #EXTM3U
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261112/141e2bdef3898245e30a3ff9d7c4ee89.png" group-title="Sút Bóng TV" , 🟡 20:00 16/11 ⚽ Zimbabwe vs Equatorial Guinea (REDBULL)
-#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
-https://freem3u.xyz/static/no-signal/low.m3u8
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261112/141e2bdef3898245e30a3ff9d7c4ee89.png" group-title="Sút Bóng TV" , 🟡 20:00 16/11 ⚽ Zimbabwe vs Equatorial Guinea (TUẤN CÙI)
-#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
-https://freem3u.xyz/static/no-signal/low.m3u8
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261112/141e2bdef3898245e30a3ff9d7c4ee89.png" group-title="Sút Bóng TV" , 🟡 20:00 16/11 ⚽ Zimbabwe vs Equatorial Guinea (XUÂN SON)
-#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
-https://freem3u.xyz/static/no-signal/low.m3u8
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261112/141e2bdef3898245e30a3ff9d7c4ee89.png" group-title="Sút Bóng TV" , 🟡 20:00 16/11 ⚽ Zimbabwe vs Equatorial Guinea (ĐỖ TÚ TÀI)
-#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
-https://freem3u.xyz/static/no-signal/low.m3u8
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261112/4cd8dd22f5347a26464313699b249029.png" group-title="Sút Bóng TV" , 🟡 20:00 16/11 ⚽ Namibia vs Cameroon (CÔNG CHẤT)
-#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
-https://freem3u.xyz/static/no-signal/low.m3u8
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261112/4cd8dd22f5347a26464313699b249029.png" group-title="Sút Bóng TV" , 🟡 20:00 16/11 ⚽ Namibia vs Cameroon (BLV COCA)
-#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
-https://freem3u.xyz/static/no-signal/low.m3u8
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261112/4cd8dd22f5347a26464313699b249029.png" group-title="Sút Bóng TV" , 🟡 20:00 16/11 ⚽ Namibia vs Cameroon (THẠCH TÚ)
-#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
-https://freem3u.xyz/static/no-signal/low.m3u8
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261112/4cd8dd22f5347a26464313699b249029.png" group-title="Sút Bóng TV" , 🟡 20:00 16/11 ⚽ Namibia vs Cameroon (BLV ALEX)
-#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
-https://freem3u.xyz/static/no-signal/low.m3u8
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261112/4cd8dd22f5347a26464313699b249029.png" group-title="Sút Bóng TV" , 🟡 20:00 16/11 ⚽ Namibia vs Cameroon (LOKA)
-#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
-https://freem3u.xyz/static/no-signal/low.m3u8
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261112/4cd8dd22f5347a26464313699b249029.png" group-title="Sút Bóng TV" , 🟡 20:00 16/11 ⚽ Namibia vs Cameroon (BÒ TƯƠI)
-#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
-https://freem3u.xyz/static/no-signal/low.m3u8
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261112/79486d82c8bfe05c5d0a31d8133325e9.png" group-title="Sút Bóng TV" , 🟡 20:00 16/11 ⚽ Sudan vs Senegal (TẠ BIÊN GIỚI)
-#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
-https://freem3u.xyz/static/no-signal/low.m3u8
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261112/79486d82c8bfe05c5d0a31d8133325e9.png" group-title="Sút Bóng TV" , 🟡 20:00 16/11 ⚽ Sudan vs Senegal (TYPN)
-#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
-https://freem3u.xyz/static/no-signal/low.m3u8
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261112/79486d82c8bfe05c5d0a31d8133325e9.png" group-title="Sút Bóng TV" , 🟡 20:00 16/11 ⚽ Sudan vs Senegal (BLV Củ Cải)
-#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
-https://freem3u.xyz/static/no-signal/low.m3u8
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261112/79486d82c8bfe05c5d0a31d8133325e9.png" group-title="Sút Bóng TV" , 🟡 20:00 16/11 ⚽ Sudan vs Senegal (CR Bưởi)
-#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
-https://freem3u.xyz/static/no-signal/low.m3u8
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261112/79486d82c8bfe05c5d0a31d8133325e9.png" group-title="Sút Bóng TV" , 🟡 20:00 16/11 ⚽ Sudan vs Senegal (BLV MESSI)
-#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
-https://freem3u.xyz/static/no-signal/low.m3u8
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261112/79486d82c8bfe05c5d0a31d8133325e9.png" group-title="Sút Bóng TV" , 🟡 20:00 16/11 ⚽ Sudan vs Senegal (A MÂN)
-#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
-https://freem3u.xyz/static/no-signal/low.m3u8
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261112/f92c8d53193d60ec5429e9e23d8a10c2.png" group-title="Sút Bóng TV" , 22:00 16/11 ⚽ Somalia vs Ghana (BLV ANH TÀI)
 #EXTVLCOPT:http-referrer=https://sutbong-tv.net/
@@ -1429,22 +1411,6 @@ https://freem3u.xyz/static/no-signal/low.m3u8
 #EXTVLCOPT:http-referrer=https://sutbong-tv.net/
 https://freem3u.xyz/static/no-signal/low.m3u8
 
-#EXTINF:-1 tvg-logo="24b9e0931d66349fbfb639e2d60de183.webp" group-title="Sút Bóng TV" , 23:00 16/11 ⚽ Central African Republic vs Benin (BLV LONG)
-#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
-https://freem3u.xyz/static/no-signal/low.m3u8
-
-#EXTINF:-1 tvg-logo="24b9e0931d66349fbfb639e2d60de183.webp" group-title="Sút Bóng TV" , 23:00 16/11 ⚽ Central African Republic vs Benin (BLV XO)
-#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
-https://freem3u.xyz/static/no-signal/low.m3u8
-
-#EXTINF:-1 tvg-logo="24b9e0931d66349fbfb639e2d60de183.webp" group-title="Sút Bóng TV" , 23:00 16/11 ⚽ Central African Republic vs Benin (TRÀ ĐÁ)
-#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
-https://freem3u.xyz/static/no-signal/low.m3u8
-
-#EXTINF:-1 tvg-logo="24b9e0931d66349fbfb639e2d60de183.webp" group-title="Sút Bóng TV" , 23:00 16/11 ⚽ Central African Republic vs Benin (BOSS)
-#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
-https://freem3u.xyz/static/no-signal/low.m3u8
-
 #EXTINF:-1 tvg-logo="c8c1fad8f7b657fa96c4e5da96ada7c2.webp" group-title="Sút Bóng TV" , 23:00 16/11 ⚽ Eritrea vs Guinea (BLV WUKONG)
 #EXTVLCOPT:http-referrer=https://sutbong-tv.net/
 https://freem3u.xyz/static/no-signal/low.m3u8
@@ -1458,6 +1424,22 @@ https://freem3u.xyz/static/no-signal/low.m3u8
 https://freem3u.xyz/static/no-signal/low.m3u8
 
 #EXTINF:-1 tvg-logo="c8c1fad8f7b657fa96c4e5da96ada7c2.webp" group-title="Sút Bóng TV" , 23:00 16/11 ⚽ Eritrea vs Guinea (KENCHU)
+#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
+https://freem3u.xyz/static/no-signal/low.m3u8
+
+#EXTINF:-1 tvg-logo="24b9e0931d66349fbfb639e2d60de183.webp" group-title="Sút Bóng TV" , 23:00 16/11 ⚽ Central African Republic vs Benin (BLV LONG)
+#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
+https://freem3u.xyz/static/no-signal/low.m3u8
+
+#EXTINF:-1 tvg-logo="24b9e0931d66349fbfb639e2d60de183.webp" group-title="Sút Bóng TV" , 23:00 16/11 ⚽ Central African Republic vs Benin (BLV XO)
+#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
+https://freem3u.xyz/static/no-signal/low.m3u8
+
+#EXTINF:-1 tvg-logo="24b9e0931d66349fbfb639e2d60de183.webp" group-title="Sút Bóng TV" , 23:00 16/11 ⚽ Central African Republic vs Benin (TRÀ ĐÁ)
+#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
+https://freem3u.xyz/static/no-signal/low.m3u8
+
+#EXTINF:-1 tvg-logo="24b9e0931d66349fbfb639e2d60de183.webp" group-title="Sút Bóng TV" , 23:00 16/11 ⚽ Central African Republic vs Benin (BOSS)
 #EXTVLCOPT:http-referrer=https://sutbong-tv.net/
 https://freem3u.xyz/static/no-signal/low.m3u8
 
@@ -1673,6 +1655,30 @@ https://freem3u.xyz/static/no-signal/low.m3u8
 #EXTVLCOPT:http-referrer=https://sutbong-tv.net/
 https://freem3u.xyz/static/no-signal/low.m3u8
 
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261114/2a17aab5c79052f072188656e6f9e9f4.png" group-title="Sút Bóng TV" , 08:00 17/11 ⚽ Canada vs Guatemala (RICKHANTER)
+#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
+https://freem3u.xyz/static/no-signal/low.m3u8
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261114/2a17aab5c79052f072188656e6f9e9f4.png" group-title="Sút Bóng TV" , 08:00 17/11 ⚽ Canada vs Guatemala (ZIZOU)
+#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
+https://freem3u.xyz/static/no-signal/low.m3u8
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261114/2a17aab5c79052f072188656e6f9e9f4.png" group-title="Sút Bóng TV" , 08:00 17/11 ⚽ Canada vs Guatemala (TUẤN CÙI)
+#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
+https://freem3u.xyz/static/no-signal/low.m3u8
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261114/2a17aab5c79052f072188656e6f9e9f4.png" group-title="Sút Bóng TV" , 08:00 17/11 ⚽ Canada vs Guatemala (LOKA)
+#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
+https://freem3u.xyz/static/no-signal/low.m3u8
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261114/2a17aab5c79052f072188656e6f9e9f4.png" group-title="Sút Bóng TV" , 08:00 17/11 ⚽ Canada vs Guatemala (CURRY)
+#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
+https://freem3u.xyz/static/no-signal/low.m3u8
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261114/2a17aab5c79052f072188656e6f9e9f4.png" group-title="Sút Bóng TV" , 08:00 17/11 ⚽ Canada vs Guatemala (A MÂN)
+#EXTVLCOPT:http-referrer=https://sutbong-tv.net/
+https://freem3u.xyz/static/no-signal/low.m3u8
+
  
  
 #EXTM3U
@@ -1682,12 +1688,12 @@ https://freem3u.xyz/static/no-signal/low.m3u8
 #EXTM3U
 
 #EXTINF:-1 tvg-logo="https://xoigac.top/images/football/teams/26409.webp" group-title="Xôi Gấc TV" , 🟢 19:00 16/11 ⚽ OFK Bor 1919 vs Semendrija 1924 (Raccoon)
-https://4ac07980a95d.ap-northeast-1.playback.live-video.net/api/video/v1/ap-northeast-1.256097482755.channel.YAscHmqgg70i.m3u8?expires=1794846924&signature=y3rSWV7FpsQ6fCTrua2SwghAbCEVSeoqoh69Hu7_CuU
+https://4ac07980a95d.ap-northeast-1.playback.live-video.net/api/video/v1/ap-northeast-1.256097482755.channel.YAscHmqgg70i.m3u8?expires=1794847826&signature=EWCGYOqBfutGCzmV2ctlh8uR6zwGq2NdIUG-PsxsujU
 
-#EXTINF:-1 tvg-logo="https://xoigac.top/images/football/teams/1493.webp" group-title="Xôi Gấc TV" , 🟡 20:00 16/11 ⚽ Namibia vs Cameroon (Deal Pool)
-https://freem3u.xyz/static/no-signal/low.m3u8
+#EXTINF:-1 tvg-logo="https://xoigac.top/images/football/teams/1510.webp" group-title="Xôi Gấc TV" , 🟢 20:00 16/11 ⚽ Sudan vs Senegal (Hawkeye)
+https://4ac07980a95d.ap-northeast-1.playback.live-video.net/api/video/v1/ap-northeast-1.256097482755.channel.3u8uOIxZuIsF.m3u8?expires=1794847829&signature=zbwtsuGRDpqi36kRHRKgrza-Mg62zMrTV18vA69BhPQ
 
-#EXTINF:-1 tvg-logo="https://xoigac.top/images/football/teams/1510.webp" group-title="Xôi Gấc TV" , 🟡 20:00 16/11 ⚽ Sudan vs Senegal (Hawkeye)
+#EXTINF:-1 tvg-logo="https://xoigac.top/images/football/teams/1493.webp" group-title="Xôi Gấc TV" , 🟢 20:00 16/11 ⚽ Namibia vs Cameroon (Deal Pool)
 https://freem3u.xyz/static/no-signal/low.m3u8
 
 #EXTINF:-1 tvg-logo="https://xoigac.top/images/football/teams/8050.webp" group-title="Xôi Gấc TV" , 22:00 16/11 ⚽ Somalia vs Ghana (Super Man)
@@ -1726,6 +1732,9 @@ https://freem3u.xyz/static/no-signal/low.m3u8
 #EXTINF:-1 tvg-logo="https://xoigac.top/images/basketball/teams/134.webp" group-title="Xôi Gấc TV" , 07:30 17/11 🏀 Brooklyn Nets vs Philadelphia 76ers (The Flash)
 https://freem3u.xyz/static/no-signal/low.m3u8
 
+#EXTINF:-1 tvg-logo="https://xoigac.top/images/football/teams/5529.webp" group-title="Xôi Gấc TV" , 08:00 17/11 ⚽ Canada vs Guatemala (Raccoon)
+https://freem3u.xyz/static/no-signal/low.m3u8
+
  
  
 #EXTM3U
@@ -1737,10 +1746,6 @@ https://pull.digitalcdn.net/live/343c68affbd34b22a54a674f3b93e436/index.m3u8
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phy96m2wd/image/small" group-title="Phá Làng TV" , 🟢 20:00 16/11 ⚽ Sudan vs Senegal (LÃM LÀNG) [geo] 
 #EXTVLCOPT:http-referrer=https://phalang.live/
 https://pull.digitalcdn.net/live/a66c577a44b048c899c0ce40f8eab8db/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nh0l4omd7o/image/small" group-title="Phá Làng TV" , 🟡 20:00 16/11 ⚽ Namibia vs Cameroon (Unknown) [geo] 
-#EXTVLCOPT:http-referrer=https://phalang.live/
-https://pull.digitalcdn.net/live/d377417e31414eee93fd8a5a97cfe468/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/p3glrw7h2wnqdyj/image/small" group-title="Phá Làng TV" , 22:00 16/11 ⚽ Kazakhstan vs Slovakia (LÝ LÊN LỬA) [geo] 
 #EXTVLCOPT:http-referrer=https://phalang.live/
@@ -1804,125 +1809,143 @@ https://pull.digitalcdn.net/live/9dbaee3afaa647fdadbe7fe2a1f81a5a/index.m3u8
 
  
 #EXTINF:-1 group-title="🔥 Hot",22:00 16/11 ⚽ Kazakhstan Vs Slovakia
-https://v1.livestreambong.tv/34bf3669c15b41423238c5ae52a9578a3ca1bd47/4e693ca61975fa49cf0eb33c10e362d3/1794875998/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/d4b7e73b29cf185334dac66b17b5783ae80fd648/4e693ca61975fa49cf0eb33c10e362d3/1794876912/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="🔥 Hot",22:00 16/11 ⚽ Faroe Islands Vs Moldova
-https://v1.livestreambong.tv/34bf3669c15b41423238c5ae52a9578a3ca1bd47/19e389b7394117d6fd04f0a84fcdf9e3/1794875998/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/d4b7e73b29cf185334dac66b17b5783ae80fd648/19e389b7394117d6fd04f0a84fcdf9e3/1794876912/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="🔥 Hot",22:00 16/11 ⚽ Kazakhstan Vs Slovakia
-https://v1.livestreambong.tv/3e744210cebe0aa336b093f9f9803393b71ad76f/19e389b7394117d6fd04f0a84fcdf9e3/1794876074/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/249a1031d3696a15a3f2ced095063ef5bb713b70/4e693ca61975fa49cf0eb33c10e362d3/1794876998/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="🔥 Hot",22:00 16/11 ⚽ Faroe Islands Vs Moldova
-https://v1.livestreambong.tv/ca0fe9fbc9475e5e7e88afe7bed675d1904aac57/19e389b7394117d6fd04f0a84fcdf9e3/1794876071/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="🔥 Hot",00:00 17/11 ⚽ Iceland Vs Luxembourg
-https://v1.livestreambong.tv/ca0fe9fbc9475e5e7e88afe7bed675d1904aac57/4e693ca61975fa49cf0eb33c10e362d3/1794876071/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/249a1031d3696a15a3f2ced095063ef5bb713b70/19e389b7394117d6fd04f0a84fcdf9e3/1794876998/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="Xoilac365",22:00 16/11 ⚽ Kazakhstan Vs Slovakia
-https://v1.livestreambong.tv/34bf3669c15b41423238c5ae52a9578a3ca1bd47/4e693ca61975fa49cf0eb33c10e362d3/1794875998/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/d4b7e73b29cf185334dac66b17b5783ae80fd648/4e693ca61975fa49cf0eb33c10e362d3/1794876912/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="Xoilac365",22:00 16/11 ⚽ Faroe Islands Vs Moldova
-https://v1.livestreambong.tv/34bf3669c15b41423238c5ae52a9578a3ca1bd47/19e389b7394117d6fd04f0a84fcdf9e3/1794875998/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/d4b7e73b29cf185334dac66b17b5783ae80fd648/19e389b7394117d6fd04f0a84fcdf9e3/1794876912/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="Xoilac365",20:00 16/11 ⚽ Zimbabwe Vs Guinea Xich Dao
-https://v1.livestreambong.tv/8860ad591d5f038485dceb48c6e289a5aee0474c/4e693ca61975fa49cf0eb33c10e362d3/1794876004/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="Xoilac365",21:00 16/11 ⚽ Italy U20 Vs Thuy Si U20
-https://v1.livestreambong.tv/8860ad591d5f038485dceb48c6e289a5aee0474c/19e389b7394117d6fd04f0a84fcdf9e3/1794876004/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/ad08397ece2fff33268ebda99b1f9e42eb0ecffa/4e693ca61975fa49cf0eb33c10e362d3/1794876918/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Xoilac365",23:00 16/11 ⚽ Eritrea Vs Guinea
+https://v1.livestreambong.tv/ad08397ece2fff33268ebda99b1f9e42eb0ecffa/19e389b7394117d6fd04f0a84fcdf9e3/1794876918/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="Xoilac365",23:00 16/11 ⚽ Ch Trung Phi Vs Benin
-https://v1.livestreambong.tv/96083cca3c719b7fed8a82116f40374bff61d6b6/19e389b7394117d6fd04f0a84fcdf9e3/1794876010/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="Xoilac365",19:45 16/11 ⚽ Kowloon City U22 Vs North District U22
-https://v1.livestreambong.tv/bbfa9822aaf546f258a517cd769223210ceab46a/19e389b7394117d6fd04f0a84fcdf9e3/1794876009/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="Xoilac365",19:45 16/11 ⚽ Panionios G S S Vs Olympiakos Piraeus B
-https://v1.livestreambong.tv/96083cca3c719b7fed8a82116f40374bff61d6b6/4e693ca61975fa49cf0eb33c10e362d3/1794876010/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="Xoilac365",20:00 16/11 ⚽ Montevideo Torque R Vs Penarol R
-https://v1.livestreambong.tv/8ade631970060a945d922847e95ec0ed70c9131a/4e693ca61975fa49cf0eb33c10e362d3/1794876016/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="Xoilac365",20:30 16/11 ⚽ Nu Nita Fa Vs Nu Garhwal Utd
-https://v1.livestreambong.tv/2fe45a5f7b12b21255cf748a7acabee654dc0abe/19e389b7394117d6fd04f0a84fcdf9e3/1794876015/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/c1f62dc833ad08eef657d7107ae64836002702bd/19e389b7394117d6fd04f0a84fcdf9e3/1794876924/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Xoilac365",20:00 16/11 ⚽ Tunisia U17 Vs Ma Roc U17
+https://v1.livestreambong.tv/c1f62dc833ad08eef657d7107ae64836002702bd/4e693ca61975fa49cf0eb33c10e362d3/1794876924/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="Xoilac365",21:00 16/11 ⚽ Nu Boca Juniors Vs Nu Ferro Carril
-https://v1.livestreambong.tv/8ade631970060a945d922847e95ec0ed70c9131a/19e389b7394117d6fd04f0a84fcdf9e3/1794876016/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="Xoilac365",22:00 16/11 ⚽ Hilal Athletic Nador W Vs Fus Rabat Women
-https://v1.livestreambong.tv/b436d22c830c3d104add9f0fa7412318750ac580/4e693ca61975fa49cf0eb33c10e362d3/1794876021/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="Xoilac365",22:00 16/11 ⚽ Thuy Si U18 Vs Anh U18
-https://v1.livestreambong.tv/b436d22c830c3d104add9f0fa7412318750ac580/19e389b7394117d6fd04f0a84fcdf9e3/1794876021/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="Xoilac365",00:00 17/11 ⚽ Hy Lap U21 Vs Iceland U21
-https://v1.livestreambong.tv/1dfeae4406afc20e161fec9a63d6b00bbf1ffdc1/4e693ca61975fa49cf0eb33c10e362d3/1794876022/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/77ba35bb24079e09bddcc565737c50187f420291/19e389b7394117d6fd04f0a84fcdf9e3/1794876930/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Xoilac365",02:00 17/11 ⚽ Chile U20 Vs Mexico U20
+https://v1.livestreambong.tv/77ba35bb24079e09bddcc565737c50187f420291/4e693ca61975fa49cf0eb33c10e362d3/1794876930/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Xoilac365",23:00 16/11 ⚽ Bo Dao Nha U20 Vs Anh U20
+https://v1.livestreambong.tv/499feb48c75bf0daca480ae6a527864cc2cd8640/19e389b7394117d6fd04f0a84fcdf9e3/1794876936/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Xoilac365",23:00 16/11 ⚽ Bo Bien Nga U20 Vs Ma Roc U20
+https://v1.livestreambong.tv/499feb48c75bf0daca480ae6a527864cc2cd8640/4e693ca61975fa49cf0eb33c10e362d3/1794876936/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="90Phut",22:00 16/11 ⚽ Kazakhstan Vs Slovakia
-https://v1.livestreambong.tv/7345d2dd7690efbfb70e1ab94be649697c49f5ec/4e693ca61975fa49cf0eb33c10e362d3/1794876032/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/658bc1f7f700fe4afdfcd9f4f0dae98436b7c382/4e693ca61975fa49cf0eb33c10e362d3/1794876947/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="90Phut",22:00 16/11 ⚽ Faroe Islands Vs Moldova
-https://v1.livestreambong.tv/a599c2ee3659cd1e9f5bd21be1023394ce5f6d83/4e693ca61975fa49cf0eb33c10e362d3/1794876031/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="90Phut",18:00 16/11 ⚽ Nu Tay Ban Nha U17 Vs Nu Thuy Si U17
-https://v1.livestreambong.tv/7345d2dd7690efbfb70e1ab94be649697c49f5ec/19e389b7394117d6fd04f0a84fcdf9e3/1794876032/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="90Phut",18:00 16/11 ⚽ Bursaspor U19 Vs Balikesirspor U19
-https://v1.livestreambong.tv/3db583eec24281bb7c26b94c419d61fcbf0db472/4e693ca61975fa49cf0eb33c10e362d3/1794876037/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="90Phut",19:00 16/11 ⚽ Fk Graficar Beograd Vs Vozdovac Beograd
-https://v1.livestreambong.tv/3db583eec24281bb7c26b94c419d61fcbf0db472/19e389b7394117d6fd04f0a84fcdf9e3/1794876037/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/570dac6d494f199480878580927202882b837a47/4e693ca61975fa49cf0eb33c10e362d3/1794876946/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="90Phut",18:00 16/11 ⚽ Ba Lan U18 Vs Ch Sec U18
+https://v1.livestreambong.tv/570dac6d494f199480878580927202882b837a47/19e389b7394117d6fd04f0a84fcdf9e3/1794876946/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="90Phut",19:00 16/11 ⚽ Bor 1919 Vs Semendrija 1924
-https://v1.livestreambong.tv/c308c7896624fb88719f1bc949adedf926e1075f/4e693ca61975fa49cf0eb33c10e362d3/1794876038/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="90Phut",19:45 16/11 ⚽ Panionios G S S Vs Olympiakos Piraeus B
-https://v1.livestreambong.tv/c308c7896624fb88719f1bc949adedf926e1075f/19e389b7394117d6fd04f0a84fcdf9e3/1794876038/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/513091430196663be9628f2799fc1a427c4dc067/4e693ca61975fa49cf0eb33c10e362d3/1794876953/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="90Phut",19:00 16/11 ⚽ Nga U21 Vs Kyrgyzstan U23
+https://v1.livestreambong.tv/31ec0144091a28f467b8fde7fe1750be4ad4de47/4e693ca61975fa49cf0eb33c10e362d3/1794876952/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="90Phut",20:00 16/11 ⚽ Namibia Vs Cameroon
-https://v1.livestreambong.tv/655dcf874c87cf98fc411f67a6934847ab4d566f/19e389b7394117d6fd04f0a84fcdf9e3/1794876043/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="90Phut",20:00 16/11 ⚽ Zimbabwe Vs Guinea Xich Dao
-https://v1.livestreambong.tv/655dcf874c87cf98fc411f67a6934847ab4d566f/4e693ca61975fa49cf0eb33c10e362d3/1794876043/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="90Phut",20:00 16/11 ⚽ Tunisia U17 Vs Ma Roc U17
-https://v1.livestreambong.tv/4a3eef0cab08d8b0773e400e9a7e3b7a03dd6b13/19e389b7394117d6fd04f0a84fcdf9e3/1794876044/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/31ec0144091a28f467b8fde7fe1750be4ad4de47/19e389b7394117d6fd04f0a84fcdf9e3/1794876952/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="90Phut",20:00 16/11 ⚽ Sudan Vs Senegal
+https://v1.livestreambong.tv/077c1353595c55fcb4923f28436ac4af2e148fea/4e693ca61975fa49cf0eb33c10e362d3/1794876958/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="90Phut",20:00 16/11 ⚽ Algeria U17 Vs Ai Cap U17
+https://v1.livestreambong.tv/077c1353595c55fcb4923f28436ac4af2e148fea/19e389b7394117d6fd04f0a84fcdf9e3/1794876958/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="90Phut",20:00 16/11 ⚽ Montevideo Torque R Vs Penarol R
-https://v1.livestreambong.tv/a3da6c2d03506a4a6b7016193a6d838870ca036a/19e389b7394117d6fd04f0a84fcdf9e3/1794876049/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="90Phut",20:30 16/11 ⚽ Nu Nita Fa Vs Nu Garhwal Utd
-https://v1.livestreambong.tv/a3da6c2d03506a4a6b7016193a6d838870ca036a/4e693ca61975fa49cf0eb33c10e362d3/1794876049/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/5f84e66524f0d2a965cb25c06348ddc0cd6f8ea4/19e389b7394117d6fd04f0a84fcdf9e3/1794876959/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="90Phut",21:00 16/11 ⚽ Ch Sec U20 Vs Duc U20
+https://v1.livestreambong.tv/295bd3d84c559cfc8b2bd8b7a7834ee6690a854b/19e389b7394117d6fd04f0a84fcdf9e3/1794876964/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="90Phut",18:30 16/11 ⚽ Nu Jiansu Nangang Vs Nu Hebei Hengshuihu
+https://v1.livestreambong.tv/1f7540044a9a6f5d753ae4cd43b71569f4189cd0/19e389b7394117d6fd04f0a84fcdf9e3/1794876965/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="90Phut",18:30 16/11 ⚽ Nu Shanxi Zhuyeqing Vs Nu Hefei Culture
+https://v1.livestreambong.tv/295bd3d84c559cfc8b2bd8b7a7834ee6690a854b/4e693ca61975fa49cf0eb33c10e362d3/1794876964/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="90Phut",22:00 16/11 ⚽ Nu Bc Samara Vs Nu Guvd Dynamo
-https://v1.livestreambong.tv/5df31a7d6645528c8fe252a63d65a2f6ff08a898/4e693ca61975fa49cf0eb33c10e362d3/1794876055/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="90Phut",22:00 16/11 ⚽ Panther Vs Pyrinto Akatemia A
-https://v1.livestreambong.tv/f526fc6e698ccab9cb9da70277ba9b1faa7f8e3d/4e693ca61975fa49cf0eb33c10e362d3/1794876056/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/4171c4b020b3288cf509f0351e4ce29f9ccad674/4e693ca61975fa49cf0eb33c10e362d3/1794876970/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="90Phut",22:30 16/11 ⚽ Hba Marsky Vs Kobrat
-https://v1.livestreambong.tv/5df31a7d6645528c8fe252a63d65a2f6ff08a898/19e389b7394117d6fd04f0a84fcdf9e3/1794876055/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/309aa2abc2e2a4e92e2cf34514032d3bf8e66cb2/4e693ca61975fa49cf0eb33c10e362d3/1794876971/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="90Phut",23:00 16/11 ⚽ Basketbol Brno Vs Usk Prague
+https://v1.livestreambong.tv/309aa2abc2e2a4e92e2cf34514032d3bf8e66cb2/19e389b7394117d6fd04f0a84fcdf9e3/1794876971/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="Xoilac86",22:00 16/11 ⚽ Kazakhstan Vs Slovakia
-https://v1.livestreambong.tv/3e744210cebe0aa336b093f9f9803393b71ad76f/19e389b7394117d6fd04f0a84fcdf9e3/1794876074/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/249a1031d3696a15a3f2ced095063ef5bb713b70/4e693ca61975fa49cf0eb33c10e362d3/1794876998/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="Xoilac86",22:00 16/11 ⚽ Faroe Islands Vs Moldova
-https://v1.livestreambong.tv/ca0fe9fbc9475e5e7e88afe7bed675d1904aac57/19e389b7394117d6fd04f0a84fcdf9e3/1794876071/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="Xoilac86",00:00 17/11 ⚽ Iceland Vs Luxembourg
-https://v1.livestreambong.tv/ca0fe9fbc9475e5e7e88afe7bed675d1904aac57/4e693ca61975fa49cf0eb33c10e362d3/1794876071/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/249a1031d3696a15a3f2ced095063ef5bb713b70/19e389b7394117d6fd04f0a84fcdf9e3/1794876998/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="Xoilac86",20:00 16/11 ⚽ Zimbabwe Vs Guinea Xich Dao
-https://v1.livestreambong.tv/709962198ca120e25b9df5fd81439575d56d5f79/4e693ca61975fa49cf0eb33c10e362d3/1794876078/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="Xoilac86",22:00 16/11 ⚽ Somalia Vs Ghana
-https://v1.livestreambong.tv/f7dadeea71f780734c34d244a3cb01939e46753a/19e389b7394117d6fd04f0a84fcdf9e3/1794876079/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/72e2cf7021e5537813db30c6f4517ff184e8b5c5/19e389b7394117d6fd04f0a84fcdf9e3/1794877009/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Xoilac86",20:00 16/11 ⚽ Sudan Vs Senegal
+https://v1.livestreambong.tv/72e2cf7021e5537813db30c6f4517ff184e8b5c5/4e693ca61975fa49cf0eb33c10e362d3/1794877009/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="Xoilac86",23:00 16/11 ⚽ Eritrea Vs Guinea
-https://v1.livestreambong.tv/0dc9a96401d5402088dc6b476f41ae9b1056cb96/19e389b7394117d6fd04f0a84fcdf9e3/1794876082/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/68789c7b8efad02e9cedc070be71904ba913fd4a/19e389b7394117d6fd04f0a84fcdf9e3/1794877011/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="Xoilac86",23:00 16/11 ⚽ Ch Trung Phi Vs Benin
-https://v1.livestreambong.tv/12732857ccaae3bc53551b15e845de94a51a039f/4e693ca61975fa49cf0eb33c10e362d3/1794876086/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="Xoilac86",19:45 16/11 ⚽ Kowloon City U22 Vs North District U22
-https://v1.livestreambong.tv/12732857ccaae3bc53551b15e845de94a51a039f/19e389b7394117d6fd04f0a84fcdf9e3/1794876086/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="Xoilac86",20:00 16/11 ⚽ Niki Volou Vs Pyrgos Afc
-https://v1.livestreambong.tv/e8d8b4fd21c009178da3de0fceaf3c31633b52b0/4e693ca61975fa49cf0eb33c10e362d3/1794876090/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="Xoilac86",20:00 16/11 ⚽ Montevideo Torque R Vs Penarol R
-https://v1.livestreambong.tv/fbb3ba74b535ad52d7440eab30c660f2210b8cc1/4e693ca61975fa49cf0eb33c10e362d3/1794876094/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/940e882c155d90760415b9537a772536ab1e5b6b/19e389b7394117d6fd04f0a84fcdf9e3/1794877020/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Xoilac86",20:00 16/11 ⚽ Algeria U17 Vs Ai Cap U17
+https://v1.livestreambong.tv/1a0f3bdfe588ac3b9a8e327caebd9b76af80a13c/19e389b7394117d6fd04f0a84fcdf9e3/1794877021/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Xoilac86",20:00 16/11 ⚽ Tunisia U17 Vs Ma Roc U17
+https://v1.livestreambong.tv/2f93e070cd7f3d18f2ebeb432b908df597da3fff/19e389b7394117d6fd04f0a84fcdf9e3/1794877022/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="Xoilac86",20:30 16/11 ⚽ Nu Nita Fa Vs Nu Garhwal Utd
-https://v1.livestreambong.tv/fbb3ba74b535ad52d7440eab30c660f2210b8cc1/19e389b7394117d6fd04f0a84fcdf9e3/1794876094/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/aad3cf128a2ed3074601f1dab9068c96085d54a7/19e389b7394117d6fd04f0a84fcdf9e3/1794877024/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Xoilac86",21:00 16/11 ⚽ Nu Boca Juniors Vs Nu Ferro Carril
+https://v1.livestreambong.tv/56cb4050bcad9181a6b3fe1c8951705303d4f12d/19e389b7394117d6fd04f0a84fcdf9e3/1794877032/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Xoilac86",02:00 17/11 ⚽ Chile U20 Vs Mexico U20
+https://v1.livestreambong.tv/6efc61c1a9ece6e2746c7e7ef8cfd1c5f9cecdf7/4e693ca61975fa49cf0eb33c10e362d3/1794877033/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="Xoilac86",22:00 16/11 ⚽ Felgueiras U23 Vs Leixoes U23
-https://v1.livestreambong.tv/92d88985705e67927e7aedb6d1c713a2de63727e/19e389b7394117d6fd04f0a84fcdf9e3/1794876098/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/56cb4050bcad9181a6b3fe1c8951705303d4f12d/4e693ca61975fa49cf0eb33c10e362d3/1794877032/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="Xoilac86",22:00 16/11 ⚽ Hilal Athletic Nador W Vs Fus Rabat Women
-https://v1.livestreambong.tv/81533fd66925c00985bdc21c97a344b94f02e81b/19e389b7394117d6fd04f0a84fcdf9e3/1794876102/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="Xoilac86",22:00 16/11 ⚽ Thuy Si U18 Vs Anh U18
-https://v1.livestreambong.tv/81533fd66925c00985bdc21c97a344b94f02e81b/4e693ca61975fa49cf0eb33c10e362d3/1794876102/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/4f86ab3f8d231162528164c8c61762a8354ffad5/4e693ca61975fa49cf0eb33c10e362d3/1794877036/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Xoilac86",22:00 16/11 ⚽ Kosovo U21 Vs Luxembourg U21
+https://v1.livestreambong.tv/4f86ab3f8d231162528164c8c61762a8354ffad5/19e389b7394117d6fd04f0a84fcdf9e3/1794877036/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Xoilac86",23:00 16/11 ⚽ Bo Dao Nha U20 Vs Anh U20
+https://v1.livestreambong.tv/8375567a1b13a772a286a8be52029c81cd9773fe/19e389b7394117d6fd04f0a84fcdf9e3/1794877044/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="Xoilac86",00:00 17/11 ⚽ Hy Lap U21 Vs Iceland U21
-https://v1.livestreambong.tv/73d920af94888ab390e903f56d0e66da047c58a8/19e389b7394117d6fd04f0a84fcdf9e3/1794876103/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/8375567a1b13a772a286a8be52029c81cd9773fe/4e693ca61975fa49cf0eb33c10e362d3/1794877044/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Xoilac86",00:00 17/11 ⚽ Algeria U23 Vs Eswatini U23
+https://v1.livestreambong.tv/2c13e12de4484527ffb6cc38b74ce7c51ac3ab62/19e389b7394117d6fd04f0a84fcdf9e3/1794877045/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Xoilac86",17:25 16/11 ⚽ Fc United Stars Vs South United
+https://v1.livestreambong.tv/dea388d67fc503d6b21f4e26dcb2e8455e7057f3/19e389b7394117d6fd04f0a84fcdf9e3/1794877046/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="Socolive",22:00 16/11 ⚽ Kazakhstan Vs Slovakia
-https://v1.livestreambong.tv/ca781582fabdb8e2bdb987f01838707c3e33cf46/19e389b7394117d6fd04f0a84fcdf9e3/1794876116/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/8f1d0fd2a6f0c96f04d63b652831106a51dc1a28/19e389b7394117d6fd04f0a84fcdf9e3/1794877060/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="Socolive",22:00 16/11 ⚽ Faroe Islands Vs Moldova
-https://v1.livestreambong.tv/26e1c09af7d85204f9e5a8d91e743e57b04b3b03/4e693ca61975fa49cf0eb33c10e362d3/1794876117/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="Socolive",17:25 16/11 ⚽ Fc United Stars Vs South United
-https://v1.livestreambong.tv/26e1c09af7d85204f9e5a8d91e743e57b04b3b03/19e389b7394117d6fd04f0a84fcdf9e3/1794876117/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="Socolive",18:00 16/11 ⚽ Inegol Kafkasspor U19 Vs Sakaryaspor U19
-https://v1.livestreambong.tv/90e48d36eee6369c0300c953c4f168ae070b985b/19e389b7394117d6fd04f0a84fcdf9e3/1794876125/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="Socolive",19:00 16/11 ⚽ Nga U21 Vs Kyrgyzstan U23
-https://v1.livestreambong.tv/868e478e1bdb5060e39816118a76ff317dc691d7/4e693ca61975fa49cf0eb33c10e362d3/1794876124/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/619114556662c47bc70fbfecc7ce4d57df6f8fbf/4e693ca61975fa49cf0eb33c10e362d3/1794877059/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Socolive",18:00 16/11 ⚽ Uzbekistan U20 Vs Venezuela U20
+https://v1.livestreambong.tv/619114556662c47bc70fbfecc7ce4d57df6f8fbf/19e389b7394117d6fd04f0a84fcdf9e3/1794877059/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Socolive",19:00 16/11 ⚽ Fk Graficar Beograd Vs Vozdovac Beograd
+https://v1.livestreambong.tv/8f1d0fd2a6f0c96f04d63b652831106a51dc1a28/4e693ca61975fa49cf0eb33c10e362d3/1794877060/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Socolive",19:00 16/11 ⚽ Bor 1919 Vs Semendrija 1924
+https://v1.livestreambong.tv/8ee158d824d46a6054fa547622ba4e78c3fe5047/4e693ca61975fa49cf0eb33c10e362d3/1794877068/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="Socolive",19:45 16/11 ⚽ Panionios G S S Vs Olympiakos Piraeus B
-https://v1.livestreambong.tv/46bb470ae0c1a13933329065c517968dade0fb53/4e693ca61975fa49cf0eb33c10e362d3/1794876132/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="Socolive",20:00 16/11 ⚽ Zimbabwe Vs Guinea Xich Dao
-https://v1.livestreambong.tv/89e361652e0cfba72dbc9282de7e27ed6395e5e8/4e693ca61975fa49cf0eb33c10e362d3/1794876133/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="Socolive",20:00 16/11 ⚽ Tunisia U17 Vs Ma Roc U17
-https://v1.livestreambong.tv/89e361652e0cfba72dbc9282de7e27ed6395e5e8/19e389b7394117d6fd04f0a84fcdf9e3/1794876133/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="Socolive",20:00 16/11 ⚽ Niki Volou Vs Pyrgos Afc
-https://v1.livestreambong.tv/d3f5a1bbcb56187d91d99f6076206402d4921409/19e389b7394117d6fd04f0a84fcdf9e3/1794876140/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/37ad1270b44f3256a4ddc9265a209fb9ff626f2b/4e693ca61975fa49cf0eb33c10e362d3/1794877067/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Socolive",20:00 16/11 ⚽ Sudan Vs Senegal
+https://v1.livestreambong.tv/fc7b65db6fa215943b87c1bc5f04d55fd4313c79/19e389b7394117d6fd04f0a84fcdf9e3/1794877076/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Socolive",20:00 16/11 ⚽ Algeria U17 Vs Ai Cap U17
+https://v1.livestreambong.tv/8160d1a90f7e22feb1d90077429069539c6c0dec/4e693ca61975fa49cf0eb33c10e362d3/1794877075/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="Socolive",20:00 16/11 ⚽ Montevideo Torque R Vs Penarol R
-https://v1.livestreambong.tv/d3f5a1bbcb56187d91d99f6076206402d4921409/4e693ca61975fa49cf0eb33c10e362d3/1794876140/live/_definst_//playlist.m3u8
-#EXTINF:-1 group-title="Socolive",02:00 17/11 ⚽ Chile U20 Vs Mexico U20
-https://v1.livestreambong.tv/9b8dd40f10549a3e92439370721dffc840d22b95/4e693ca61975fa49cf0eb33c10e362d3/1794876148/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/8160d1a90f7e22feb1d90077429069539c6c0dec/19e389b7394117d6fd04f0a84fcdf9e3/1794877075/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Socolive",20:30 16/11 ⚽ Nu Nita Fa Vs Nu Garhwal Utd
+https://v1.livestreambong.tv/fc7b65db6fa215943b87c1bc5f04d55fd4313c79/4e693ca61975fa49cf0eb33c10e362d3/1794877076/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Socolive",21:00 16/11 ⚽ Ch Sec U20 Vs Duc U20
+https://v1.livestreambong.tv/064169ffb9274486ab7c2992a6dac8aeace514c4/4e693ca61975fa49cf0eb33c10e362d3/1794877084/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Socolive",21:00 16/11 ⚽ Nu Boca Juniors Vs Nu Ferro Carril
+https://v1.livestreambong.tv/064169ffb9274486ab7c2992a6dac8aeace514c4/19e389b7394117d6fd04f0a84fcdf9e3/1794877084/live/_definst_//playlist.m3u8
 #EXTINF:-1 group-title="Socolive",22:00 16/11 ⚽ Felgueiras U23 Vs Leixoes U23
-https://v1.livestreambong.tv/9b8dd40f10549a3e92439370721dffc840d22b95/19e389b7394117d6fd04f0a84fcdf9e3/1794876148/live/_definst_//playlist.m3u8
+https://v1.livestreambong.tv/e0aaf578a6f4f853eaac252ebc512f8298702e39/19e389b7394117d6fd04f0a84fcdf9e3/1794877083/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Socolive",22:00 16/11 ⚽ Thuy Si U18 Vs Anh U18
+https://v1.livestreambong.tv/1d03d534e38a93330012a0c44bf83e3072eba0dd/4e693ca61975fa49cf0eb33c10e362d3/1794877092/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Socolive",22:00 16/11 ⚽ Hilal Athletic Nador W Vs Fus Rabat Women
+https://v1.livestreambong.tv/d06fec5250835f1f3adb57e9d8c234c4302e9301/19e389b7394117d6fd04f0a84fcdf9e3/1794877091/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Socolive",22:00 16/11 ⚽ Kosovo U21 Vs Luxembourg U21
+https://v1.livestreambong.tv/1d03d534e38a93330012a0c44bf83e3072eba0dd/19e389b7394117d6fd04f0a84fcdf9e3/1794877092/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="Socolive",23:00 16/11 ⚽ Ch Trung Phi Vs Benin
+https://v1.livestreambong.tv/d06fec5250835f1f3adb57e9d8c234c4302e9301/4e693ca61975fa49cf0eb33c10e362d3/1794877091/live/_definst_//playlist.m3u8
+#EXTINF:-1 group-title="TructiepBongDa",19:45 16/11 ⚽ Panionios G S S Vs Olympiakos Piraeus B
+https://live.inplyr.com/default/l5ergph4gvjkr8k.m3u8
+#EXTINF:-1 group-title="TructiepBongDa",19:45 16/11 ⚽ Panionios G S S Vs Olympiakos Piraeus B • BLV LONG
+https://live.inplyr.com/room/9912136.m3u8
+#EXTINF:-1 group-title="TructiepBongDa",19:45 16/11 ⚽ Panionios G S S Vs Olympiakos Piraeus B • BLV XO
+https://live.inplyr.com/room/9912132.m3u8
+#EXTINF:-1 group-title="TructiepBongDa",19:45 16/11 ⚽ Panionios G S S Vs Olympiakos Piraeus B • BLV A TÚ
+https://live.inplyr.com/room/9912130.m3u8
+#EXTINF:-1 group-title="TructiepBongDa",19:45 16/11 ⚽ Panionios G S S Vs Olympiakos Piraeus B • BLV Trà Đá
+https://live.inplyr.com/room/603914.m3u8
 #EXTINF:-1 group-title="TructiepBongDa",19:00 16/11 ⚽ Bor 1919 Vs Semendrija 1924
 https://live.inplyr.com/default/2y8m4zh5k0g4ql0.m3u8
 #EXTINF:-1 group-title="TructiepBongDa",19:00 16/11 ⚽ Bor 1919 Vs Semendrija 1924 • BLV KAN
@@ -2003,16 +2026,6 @@ https://live.inplyr.com/default/n54ql7tp0wporvy.m3u8
 https://live.inplyr.com/default/dj2ry7teo911r1z.m3u8
 #EXTINF:-1 group-title="TructiepBongDa",17:35 16/11 ⚽ Ryukyu Golden Kings Vs Toyama Grouses
 https://live.inplyr.com/default/23xmv1tp5yw0mg8.m3u8
-#EXTINF:-1 group-title="TructiepBongDa",19:45 16/11 ⚽ Panionios G S S Vs Olympiakos Piraeus B
-https://live.inplyr.com/default/l5ergph4gvjkr8k.m3u8
-#EXTINF:-1 group-title="TructiepBongDa",19:45 16/11 ⚽ Panionios G S S Vs Olympiakos Piraeus B • BLV LONG
-https://live.inplyr.com/room/9912136.m3u8
-#EXTINF:-1 group-title="TructiepBongDa",19:45 16/11 ⚽ Panionios G S S Vs Olympiakos Piraeus B • BLV XO
-https://live.inplyr.com/room/9912132.m3u8
-#EXTINF:-1 group-title="TructiepBongDa",19:45 16/11 ⚽ Panionios G S S Vs Olympiakos Piraeus B • BLV A TÚ
-https://live.inplyr.com/room/9912130.m3u8
-#EXTINF:-1 group-title="TructiepBongDa",19:45 16/11 ⚽ Panionios G S S Vs Olympiakos Piraeus B • BLV Trà Đá
-https://live.inplyr.com/room/603914.m3u8
 #EXTINF:-1 group-title="TructiepBongDa",20:00 16/11 ⚽ Zimbabwe Vs Equatorial Guinea
 https://live.inplyr.com/default/3glrw7hnd807qdy.m3u8
 #EXTINF:-1 group-title="TructiepBongDa",20:00 16/11 ⚽ Zimbabwe Vs Equatorial Guinea • BLV Redbull
@@ -2071,6 +2084,12 @@ https://live.inplyr.com/room/9912102.m3u8
 https://live.inplyr.com/room/235232.m3u8
 #EXTINF:-1 group-title="TructiepBongDa",22:00 16/11 ⚽ Faroe Islands Vs Moldova • BLV BÉO
 https://live.inplyr.com/room/459401.m3u8
+#EXTINF:-1 group-title="TructiepBongDa",22:00 16/11 ⚽ Felgueiras U23 Vs Leixoes U23
+https://live.inplyr.com/default/23xmvkh6n07yqg8.m3u8
+#EXTINF:-1 group-title="TructiepBongDa",22:00 16/11 ⚽ Felgueiras U23 Vs Leixoes U23 • BLV GIÓ
+https://live.inplyr.com/room/321443.m3u8
+#EXTINF:-1 group-title="TructiepBongDa",22:00 16/11 ⚽ Felgueiras U23 Vs Leixoes U23 • BLV Quốc Khánh
+https://live.inplyr.com/room/9912129.m3u8
 #EXTINF:-1 group-title="EN · BLV Anh",EN · Sky Sports Premier League
 #EXTVLCOPT:http-referrer=https://stmify.com/
 https://cdn.stmify.com/out/v1/SKY_SPORTS_PREMIER_LEAGUE/index.m3u8
